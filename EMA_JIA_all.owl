@@ -7,8 +7,23 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://niche.cs.dal.ca/EMA_JIA.owl>
-Import(<https://github.com/william-vw/EMA/EMA_JIA_elements.owl>)
-Import(<https://github.com/william-vw/EMA/EMA_JIA_themes.owl>)
-Import(<https://github.com/william-vw/EMA/EMA_JIA_queries.owl>)
+Import(<https://raw.githubusercontent.com/william-vw/EMA/master/EMA.owl>)
+Import(<https://raw.githubusercontent.com/william-vw/EMA/master/EMA_JIA_elements.owl>)
+Import(<https://raw.githubusercontent.com/william-vw/EMA/master/EMA_JIA_queries.owl>)
+Import(<https://raw.githubusercontent.com/william-vw/EMA/master/EMA_JIA_themes.owl>)
+
+Declaration(ObjectProperty(:isElementOf))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://niche.cs.dal.ca/EMA.owl#equivalentTo> (<http://niche.cs.dal.ca/EMA.owl#equivalentTo>)
+
+SymmetricObjectProperty(<http://niche.cs.dal.ca/EMA.owl#equivalentTo>)
+
+# Object Property: <http://niche.cs.dal.ca/EMA.owl#hasElement> (<http://niche.cs.dal.ca/EMA.owl#hasElement>)
+
+InverseObjectProperties(<http://niche.cs.dal.ca/EMA.owl#hasElement> :isElementOf)
+
 
 )
