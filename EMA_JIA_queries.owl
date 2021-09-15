@@ -1,0 +1,1257 @@
+Prefix(:=<http://niche.cs.dal.ca/EMA_JIA.owl#>)
+Prefix(ema:=<http://niche.cs.dal.ca/EMA.owl#>)
+Prefix(jia:=<http://niche.cs.dal.ca/EMA_JIA.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://niche.cs.dal.ca/EMA_JIA_queries.owl>
+
+Declaration(Class(ema:Query))
+Declaration(Class(ema:Recommendation))
+Declaration(Class(jia:Arthritis))
+Declaration(Class(jia:BiologicAgents))
+Declaration(Class(jia:Corticosteroids))
+Declaration(Class(jia:DMARDs))
+Declaration(Class(jia:Effectiveness))
+Declaration(Class(jia:GrowthRelated))
+Declaration(Class(jia:HeredityRelated))
+Declaration(Class(jia:Immunizations))
+Declaration(Class(jia:InfectiousRelated))
+Declaration(Class(jia:Joints))
+Declaration(Class(jia:Likelihood))
+Declaration(Class(jia:MedicalTests))
+Declaration(Class(jia:Medications))
+Declaration(Class(jia:NSAIDs))
+Declaration(Class(jia:Outcomes))
+Declaration(Class(jia:PhysicalTherapyAndExercise))
+Declaration(Class(jia:SideEffects))
+Declaration(Class(jia:SymptomsAndSigns))
+Declaration(Class(jia:TreatmentDeliveryMethods))
+Declaration(Class(jia:Treatments))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#CanFamilyMembersGetVaccinatedWhileAChildIsTakingBiologics?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#CanFamilyMembersGetVaccinatedWhileAChildIsTakingMethotrexate?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#CanIBeSexuallyActiveWhileTakingMethotrexate?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#CanIDrinkAlcoholWhileTakingMethotrexate?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#CanIGetVaccinatedAfterStoppingBiologics?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#CanIGetVaccinatedAfterStoppingMethotrexate?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#HowAreTheEffectsOfJIAMedicationsMonitored?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#HowDoIGetTestedForUveitis?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#HowDoIKnowIfICanTakeANewMedicationWithMethotrexate?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#HowDoesArthritisAffectChildren'sGrowth?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#HowDoesArthritisCauseInflammation?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#HowEffectiveAreUveitisTreatments?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsArthritisMonitored?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsEnthesitis-relatedJIADiagnosed?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsJIADiagnosed?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsOligoarticularJIADiagnosed?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsPolyarticularRFNegativeJIADiagnosed?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsPolyarticularRFPositiveJIAdiagnosed?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsPsoriaticJIADiagnosed?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsSystemicJIADiagnosed?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsUveitisTreated?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#HowLongDoesItUsuallyTakeToTryToDiscontinueTreatment?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#HowLongShouldIUseHeatFor?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#HowLongShouldIUseIceFor?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#HowLongWillItTakeForBiologicAgentsToHaveAnEffect?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#HowLongWillItTakeForCorticosteroidsToHaveAnEffect?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#HowLongWillItTakeForMethotrexateToHaveAnEffect?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#HowLongWillItTakeForNSAIDsToHaveAnEffect?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#HowOftenDoChildrenWithOligoarticularJIANeedToHaveTheirEyesChecked?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#HowShouldIApplyHeatIfHeatingPadsOrMagicBagsDoNotWork?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#HowShouldIApplyHeatToThoseWithSkinConditions?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#HowShouldIApplyHeatToYoungChildren?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#HowShouldIApplyIceToYoungChildren?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#HowShouldIStoreMethotrexate?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#IsBedRestGoodForPeopleWithJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#IsExerciseGoodForPeopleWithJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#IsJIAContagious?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#IsJIAHereditary?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfEnthesitis-relatedJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfOligoarticularJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfPolyarticularRFNegativeJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfPolyarticularRFPositiveJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfPsoriaticJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfSystemicJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfUveitis?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreBiologicAgents?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreCorticosteroids?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreDMARDs?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreGoodPhysicalActivitiesForPeopleWithJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreNSAIDs?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreSplints?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreTheSideEffectsOfCorticosteroids?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreTheSideEffectsOfMethotrexate?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreTheSideEffectsOfNSAIDs?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreTheSideEffectsOfSteroids?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanBeExpectedFromAFirstFlare?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanCauseAJIAFlare??>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToManageTheSideEffectsOfMethotrexate?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatAFlare?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatInjuriesOrSorenessAfterSports?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatMorningStiffness?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatPain?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatStiffness?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatSwollenJoints?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsEnthesitis-relatedJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsOligoarticular-extendedJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsOligoarticular-persistentJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsOligoarticularJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsPolyarticularRFNegativeJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsPolyarticularRFPositiveJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsPsoriaticJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsSystemicJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheBestWayToApplyIceToHandsOrFeet?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForEnthesitis-relatedJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForOligoarticularJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForPsoriaticJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForRFNegativePolyarticularJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForRFPositivePolyarticularJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForSystemicJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInEnthesitis-relatedJIAWithin5Years?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInJIAWithin5Years?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInOligarticularJIAWithin5Years?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInPsoriaticJIAWithin5Years?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInRFNegativePolyarticularJIAWithin5Years?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInRFPositivePolyarticularJIAWithin5Years?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInSystemicJIAWithin5Years?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForEnthesitis-relatedJIAWithin5Years?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForOligoarticularJIAWithin5Years?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForPsoriaticJIAWithin5Years?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForRFNegativePolyarticularJIAWithin5Years?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForRFPositivePolyarticularJIAWithin5Years?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForSystematicJIAWithin5Years?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentWithin5YearsForJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfGettingJointInjections?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareAfterAttainingInactiveDisease?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactiveEnthesitis-relatedJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactiveOligoarticularJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactivePsoriaticJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactiveRFNegativePolyarticularJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactiveRFPositivePolyarticularJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactiveSystemicJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfOligoarticularJIABecomingPolyarticularJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfTakingBiologics?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfTakingDMARDs?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfTakingNSAIDs?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfTakingOralCorticosteroids?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceThatIWillNeedSurgeryBecauseOfJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheDifferenceBetweenJIARemissionAndInactiveDisease?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheLikelihoodOfHavingJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheRheumatologyClinicPhoneNumber?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsUveitis?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatJointsAreCommonlyAffectedByOligoarticularJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatJointsAreCommonlyAffectedByPolyarticularRFNegativeJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatJointsAreCommonlyAffectedByPolyarticularRFPositiveJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForEnthesitis-relatedJIACanIExpect?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForOligoarticularJIACanIExpect?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForPolyarticularRFNegativeJIACanIExpect?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForPolyarticularRFPositiveJIACanIExpect?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForPsoriaticJIACanIExpect?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForSystemicJIACanIExpect?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatPossibleOutcomesCanUveitisCause?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfI'mGoingToHaveSurgeryWhileTakingMethotrexate?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIAmUnsureAboutTheMethotrexateDose?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIFeelUnwellWhileTakingMethotrexate?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIHaveAHighFeverWhileTakingMethotrexate?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIHaveAnInfectionWhileTakingMethotrexate?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIHaveArthritisInMyNeckOrJaw?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIMissedADoseOfMethotrexate?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIWantToStopTakingMethotrexate?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIWantToUseAlternativeTherapies?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIWillBeTravellingWhileTakingBiologics?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIWillBeTravellingWhileTakingMethotrexate?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfMyMethotrexateBloodWorkResultsAreAbnormal?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldn'tIDoWhileTakingMethotrexate?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatSymptomsAreCommonlyAssociatedWithEnthesitis-relatedJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatSymptomsAreCommonlyAssociatedWithPsoriaticJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatSymptomsAreCommonlyAssociatedWithSystemicJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatVaccinesCanITakeWhileTakingBiologics?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatVaccinesCanITakeWhileTakingMethotrexate?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenAndHowAreSplintsUsed?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenAndHowShouldIAdministerCorticosteroids?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenAndHowShouldIAdministerDMARDs?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenAndHowShouldIAdministerMethotrexate?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenAndHowShouldIAdministerNSAIDs?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenCanIResumeUsingHeatOrIce?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIConsiderUsingBiologicAgents?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIConsiderUsingDMARDs?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIConsiderUsingJointInjections?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIConsiderUsingNSAIDs?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIGetMethotrexateBloodWorkDone?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIStopUsingHeat?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIStopUsingIce?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIStopUsingMethotrexate?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIUseHeat?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIUseIce?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIconsiderusingCorticosteroids?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldTheDifferentJIAMedicationsBeUsed?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhereCanILearnMoreAboutJIA?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhyDoChildrenWithJIANeedToHaveTheirEyesChecked?>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA_JIA.owl#WhyIsBloodWorkNeededWhenTakingMethotrexate?>))
+Declaration(ObjectProperty(ema:hasElement))
+Declaration(ObjectProperty(ema:hasTheme))
+Declaration(ObjectProperty(jia:isElementOf))
+Declaration(NamedIndividual(jia:AbnormalTestResults))
+Declaration(NamedIndividual(jia:AfterBeingInjured))
+Declaration(NamedIndividual(jia:AfterPlayingSports))
+Declaration(NamedIndividual(jia:AlternativeTherapies))
+Declaration(NamedIndividual(jia:Application-Other))
+Declaration(NamedIndividual(jia:Arthritis-All))
+Declaration(NamedIndividual(jia:AvoidBehaviour))
+Declaration(NamedIndividual(jia:BedRest))
+Declaration(NamedIndividual(jia:BiologicAgents-All))
+Declaration(NamedIndividual(jia:BloodWork-All))
+Declaration(NamedIndividual(jia:Cause))
+Declaration(NamedIndividual(jia:Chance))
+Declaration(NamedIndividual(jia:ContactDetails))
+Declaration(NamedIndividual(jia:Corticosteroids-All))
+Declaration(NamedIndividual(jia:DMARDs-All))
+Declaration(NamedIndividual(jia:Definition))
+Declaration(NamedIndividual(jia:Diagnose))
+Declaration(NamedIndividual(jia:DiscontinuingTreatment))
+Declaration(NamedIndividual(jia:DoNotUseTreatment))
+Declaration(NamedIndividual(jia:Dosage))
+Declaration(NamedIndividual(jia:DrinkingAlcohol))
+Declaration(NamedIndividual(jia:Duration))
+Declaration(NamedIndividual(jia:Enthesitis-relatedJIA))
+Declaration(NamedIndividual(jia:Extend))
+Declaration(NamedIndividual(jia:ExternalSource))
+Declaration(NamedIndividual(jia:EyeExam))
+Declaration(NamedIndividual(jia:FamilyMember))
+Declaration(NamedIndividual(jia:FeelingUnsure))
+Declaration(NamedIndividual(jia:FeelingUnwell))
+Declaration(NamedIndividual(jia:Feet))
+Declaration(NamedIndividual(jia:Fever))
+Declaration(NamedIndividual(jia:FirstFlare))
+Declaration(NamedIndividual(jia:Flare))
+Declaration(NamedIndividual(jia:Hands))
+Declaration(NamedIndividual(jia:Heat))
+Declaration(NamedIndividual(jia:Ice))
+Declaration(NamedIndividual(jia:ImproveSymptoms))
+Declaration(NamedIndividual(jia:InactiveDisease))
+Declaration(NamedIndividual(jia:Inflammation))
+Declaration(NamedIndividual(jia:ItIsSafe))
+Declaration(NamedIndividual(jia:Jaw))
+Declaration(NamedIndividual(jia:JointInjection))
+Declaration(NamedIndividual(jia:JuvenileIdiopathicArthritis))
+Declaration(NamedIndividual(jia:Medications-All))
+Declaration(NamedIndividual(jia:Methotrexate))
+Declaration(NamedIndividual(jia:MissedDose))
+Declaration(NamedIndividual(jia:Monitor))
+Declaration(NamedIndividual(jia:NSAIDs-All))
+Declaration(NamedIndividual(jia:Neck))
+Declaration(NamedIndividual(jia:NegativeOrPoorEffect))
+Declaration(NamedIndividual(jia:NotExtend))
+Declaration(NamedIndividual(jia:OligoarticularJIA))
+Declaration(NamedIndividual(jia:OralCorticosteroid))
+Declaration(NamedIndividual(jia:Pain))
+Declaration(NamedIndividual(jia:PediatricRheumatologyClinic))
+Declaration(NamedIndividual(jia:PolyarticularJIA))
+Declaration(NamedIndividual(jia:PositiveEffect))
+Declaration(NamedIndividual(jia:Psoriasis))
+Declaration(NamedIndividual(jia:PsoriaticJIA))
+Declaration(NamedIndividual(jia:RFNegative))
+Declaration(NamedIndividual(jia:RFPositive))
+Declaration(NamedIndividual(jia:Remission))
+Declaration(NamedIndividual(jia:ResumeTreatment))
+Declaration(NamedIndividual(jia:SexuallyActive))
+Declaration(NamedIndividual(jia:SkinConditions))
+Declaration(NamedIndividual(jia:Splint))
+Declaration(NamedIndividual(jia:StartingTreatment))
+Declaration(NamedIndividual(jia:Stiffness))
+Declaration(NamedIndividual(jia:StopTheTreatment))
+Declaration(NamedIndividual(jia:StorageTips))
+Declaration(NamedIndividual(jia:Surgery))
+Declaration(NamedIndividual(jia:SystemicJIA))
+Declaration(NamedIndividual(jia:TakeTest))
+Declaration(NamedIndividual(jia:TreatmentStopped))
+Declaration(NamedIndividual(jia:UseTreatment))
+Declaration(NamedIndividual(jia:Uveitis))
+Declaration(NamedIndividual(jia:WantToStopTreatment))
+Declaration(NamedIndividual(jia:WhenWakingUp))
+Declaration(NamedIndividual(jia:WillBeTravelling))
+Declaration(NamedIndividual(jia:Young))
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#CanFamilyMembersGetVaccinatedWhileAChildIsTakingBiologics?> (<http://niche.cs.dal.ca/EMA_JIA.owl#CanFamilyMembersGetVaccinatedWhileAChildIsTakingBiologics?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#CanFamilyMembersGetVaccinatedWhileAChildIsTakingBiologics?> "Can family members get vaccinated while a child is taking biologics?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#CanFamilyMembersGetVaccinatedWhileAChildIsTakingBiologics?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectIntersectionOf(ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasElement ObjectSomeValuesFrom(ema:hasTheme jia:Immunizations)) ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:ItIsSafe))) ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:BiologicAgents-All)))) ObjectHasValue(ema:hasTheme jia:FamilyMember)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#CanFamilyMembersGetVaccinatedWhileAChildIsTakingBiologics?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#CanFamilyMembersGetVaccinatedWhileAChildIsTakingMethotrexate?> (<http://niche.cs.dal.ca/EMA_JIA.owl#CanFamilyMembersGetVaccinatedWhileAChildIsTakingMethotrexate?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#CanFamilyMembersGetVaccinatedWhileAChildIsTakingMethotrexate?> "Can family members get vaccinated while a child is taking methotrexate?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#CanFamilyMembersGetVaccinatedWhileAChildIsTakingMethotrexate?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectIntersectionOf(ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasElement ObjectSomeValuesFrom(ema:hasTheme jia:Immunizations)) ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:ItIsSafe))) ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Methotrexate)))) ObjectHasValue(ema:hasTheme jia:FamilyMember)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#CanFamilyMembersGetVaccinatedWhileAChildIsTakingMethotrexate?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#CanIBeSexuallyActiveWhileTakingMethotrexate?> (<http://niche.cs.dal.ca/EMA_JIA.owl#CanIBeSexuallyActiveWhileTakingMethotrexate?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#CanIBeSexuallyActiveWhileTakingMethotrexate?> "Can I be sexually active while taking methotrexate?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#CanIBeSexuallyActiveWhileTakingMethotrexate?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme ema:Recommendation) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:Methotrexate) ObjectHasValue(ema:hasTheme jia:SexuallyActive))))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#CanIBeSexuallyActiveWhileTakingMethotrexate?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#CanIDrinkAlcoholWhileTakingMethotrexate?> (<http://niche.cs.dal.ca/EMA_JIA.owl#CanIDrinkAlcoholWhileTakingMethotrexate?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#CanIDrinkAlcoholWhileTakingMethotrexate?> "Can I drink alcohol while taking methotrexate?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#CanIDrinkAlcoholWhileTakingMethotrexate?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme ema:Recommendation) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:DrinkingAlcohol))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Methotrexate)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#CanIDrinkAlcoholWhileTakingMethotrexate?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#CanIGetVaccinatedAfterStoppingBiologics?> (<http://niche.cs.dal.ca/EMA_JIA.owl#CanIGetVaccinatedAfterStoppingBiologics?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#CanIGetVaccinatedAfterStoppingBiologics?> "Can I get vaccinated after stopping biologics?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#CanIGetVaccinatedAfterStoppingBiologics?> ObjectIntersectionOf(ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:BiologicAgents-All) ObjectHasValue(ema:hasTheme jia:TreatmentStopped)))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectSomeValuesFrom(ema:hasTheme jia:Immunizations)))) ObjectSomeValuesFrom(ema:hasTheme ema:Recommendation)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#CanIGetVaccinatedAfterStoppingBiologics?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#CanIGetVaccinatedAfterStoppingMethotrexate?> (<http://niche.cs.dal.ca/EMA_JIA.owl#CanIGetVaccinatedAfterStoppingMethotrexate?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#CanIGetVaccinatedAfterStoppingMethotrexate?> "Can I get vaccinated after stopping methotrexate?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#CanIGetVaccinatedAfterStoppingMethotrexate?> ObjectIntersectionOf(ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:Methotrexate) ObjectHasValue(ema:hasTheme jia:TreatmentStopped)))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectSomeValuesFrom(ema:hasTheme jia:Immunizations)))) ObjectSomeValuesFrom(ema:hasTheme ema:Recommendation)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#CanIGetVaccinatedAfterStoppingMethotrexate?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#HowAreTheEffectsOfJIAMedicationsMonitored?> (<http://niche.cs.dal.ca/EMA_JIA.owl#HowAreTheEffectsOfJIAMedicationsMonitored?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#HowAreTheEffectsOfJIAMedicationsMonitored?> "How are the effects of JIA medications monitored?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#HowAreTheEffectsOfJIAMedicationsMonitored?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Medications-All))) ObjectHasValue(ema:hasTheme jia:Monitor)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#HowAreTheEffectsOfJIAMedicationsMonitored?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#HowDoIGetTestedForUveitis?> (<http://niche.cs.dal.ca/EMA_JIA.owl#HowDoIGetTestedForUveitis?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#HowDoIGetTestedForUveitis?> "How do I get tested for uveitis?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#HowDoIGetTestedForUveitis?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:MedicalTests) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Uveitis)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#HowDoIGetTestedForUveitis?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#HowDoIKnowIfICanTakeANewMedicationWithMethotrexate?> (<http://niche.cs.dal.ca/EMA_JIA.owl#HowDoIKnowIfICanTakeANewMedicationWithMethotrexate?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#HowDoIKnowIfICanTakeANewMedicationWithMethotrexate?> "How do I know if I can take a new medication with methotrexate?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#HowDoIKnowIfICanTakeANewMedicationWithMethotrexate?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Methotrexate))) ObjectHasValue(ema:hasTheme jia:StartingTreatment)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#HowDoIKnowIfICanTakeANewMedicationWithMethotrexate?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#HowDoesArthritisAffectChildren'sGrowth?> (<http://niche.cs.dal.ca/EMA_JIA.owl#HowDoesArthritisAffectChildren'sGrowth?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#HowDoesArthritisAffectChildren'sGrowth?> "How does arthritis affect children's growth?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#HowDoesArthritisAffectChildren'sGrowth?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:GrowthRelated) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Arthritis-All)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#HowDoesArthritisAffectChildren'sGrowth?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#HowDoesArthritisCauseInflammation?> (<http://niche.cs.dal.ca/EMA_JIA.owl#HowDoesArthritisCauseInflammation?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#HowDoesArthritisCauseInflammation?> "How does arthritis cause inflammation?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#HowDoesArthritisCauseInflammation?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:Arthritis-All) ObjectHasValue(ema:hasTheme jia:Inflammation)))) ObjectHasValue(ema:hasTheme jia:Cause)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#HowDoesArthritisCauseInflammation?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#HowEffectiveAreUveitisTreatments?> (<http://niche.cs.dal.ca/EMA_JIA.owl#HowEffectiveAreUveitisTreatments?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#HowEffectiveAreUveitisTreatments?> "How effective are uveitis treatments?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#HowEffectiveAreUveitisTreatments?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:Effectiveness) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:Treatments) ObjectHasValue(ema:hasTheme jia:Uveitis))))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#HowEffectiveAreUveitisTreatments?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#HowIsArthritisMonitored?> (<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsArthritisMonitored?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#HowIsArthritisMonitored?> "How is arthritis monitored?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsArthritisMonitored?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Arthritis-All))) ObjectHasValue(ema:hasTheme jia:Monitor)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsArthritisMonitored?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#HowIsEnthesitis-relatedJIADiagnosed?> (<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsEnthesitis-relatedJIADiagnosed?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#HowIsEnthesitis-relatedJIADiagnosed?> "How is Enthesitis-related JIA diagnosed?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsEnthesitis-relatedJIADiagnosed?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Enthesitis-relatedJIA))) ObjectHasValue(ema:hasTheme jia:Diagnose)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsEnthesitis-relatedJIADiagnosed?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#HowIsJIADiagnosed?> (<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsJIADiagnosed?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#HowIsJIADiagnosed?> "How is JIA diagnosed?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsJIADiagnosed?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:JuvenileIdiopathicArthritis))) ObjectHasValue(ema:hasTheme jia:Diagnose)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsJIADiagnosed?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#HowIsOligoarticularJIADiagnosed?> (<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsOligoarticularJIADiagnosed?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#HowIsOligoarticularJIADiagnosed?> "How is oligoarticular JIA diagnosed?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsOligoarticularJIADiagnosed?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:OligoarticularJIA))) ObjectHasValue(ema:hasTheme jia:Diagnose)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsOligoarticularJIADiagnosed?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#HowIsPolyarticularRFNegativeJIADiagnosed?> (<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsPolyarticularRFNegativeJIADiagnosed?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#HowIsPolyarticularRFNegativeJIADiagnosed?> "How is Polyarticular RF negative JIA diagnosed?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsPolyarticularRFNegativeJIADiagnosed?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:PolyarticularJIA) ObjectHasValue(ema:hasTheme jia:RFNegative)))) ObjectHasValue(ema:hasTheme jia:Diagnose)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsPolyarticularRFNegativeJIADiagnosed?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#HowIsPolyarticularRFPositiveJIAdiagnosed?> (<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsPolyarticularRFPositiveJIAdiagnosed?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#HowIsPolyarticularRFPositiveJIAdiagnosed?> "How is Polyarticular RF positive JIA diagnosed?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsPolyarticularRFPositiveJIAdiagnosed?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:PolyarticularJIA) ObjectHasValue(ema:hasTheme jia:RFPositive)))) ObjectHasValue(ema:hasTheme jia:Diagnose)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsPolyarticularRFPositiveJIAdiagnosed?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#HowIsPsoriaticJIADiagnosed?> (<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsPsoriaticJIADiagnosed?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#HowIsPsoriaticJIADiagnosed?> "How is Psoriatic JIA diagnosed?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsPsoriaticJIADiagnosed?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:PsoriaticJIA))) ObjectHasValue(ema:hasTheme jia:Diagnose)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsPsoriaticJIADiagnosed?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#HowIsSystemicJIADiagnosed?> (<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsSystemicJIADiagnosed?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#HowIsSystemicJIADiagnosed?> "How is Systemic JIA diagnosed?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsSystemicJIADiagnosed?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:SystemicJIA))) ObjectHasValue(ema:hasTheme jia:Diagnose)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsSystemicJIADiagnosed?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#HowIsUveitisTreated?> (<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsUveitisTreated?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#HowIsUveitisTreated?> "How is uveitis treated?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsUveitisTreated?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Uveitis))) ObjectHasValue(ema:hasTheme jia:UseTreatment)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#HowIsUveitisTreated?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#HowLongDoesItUsuallyTakeToTryToDiscontinueTreatment?> (<http://niche.cs.dal.ca/EMA_JIA.owl#HowLongDoesItUsuallyTakeToTryToDiscontinueTreatment?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#HowLongDoesItUsuallyTakeToTryToDiscontinueTreatment?> "How long does it usually take to try to discontinue treatment?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#HowLongDoesItUsuallyTakeToTryToDiscontinueTreatment?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Duration))) ObjectHasValue(ema:hasTheme jia:DiscontinuingTreatment)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#HowLongDoesItUsuallyTakeToTryToDiscontinueTreatment?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#HowLongShouldIUseHeatFor?> (<http://niche.cs.dal.ca/EMA_JIA.owl#HowLongShouldIUseHeatFor?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#HowLongShouldIUseHeatFor?> "How long should I use heat for?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#HowLongShouldIUseHeatFor?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Duration))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Heat))) ObjectHasValue(ema:hasTheme jia:Dosage)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#HowLongShouldIUseHeatFor?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#HowLongShouldIUseIceFor?> (<http://niche.cs.dal.ca/EMA_JIA.owl#HowLongShouldIUseIceFor?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#HowLongShouldIUseIceFor?> "how long should I use ice for?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#HowLongShouldIUseIceFor?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Duration))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Ice))) ObjectHasValue(ema:hasTheme jia:Dosage)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#HowLongShouldIUseIceFor?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#HowLongWillItTakeForBiologicAgentsToHaveAnEffect?> (<http://niche.cs.dal.ca/EMA_JIA.owl#HowLongWillItTakeForBiologicAgentsToHaveAnEffect?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#HowLongWillItTakeForBiologicAgentsToHaveAnEffect?> "How long will it take for Biologic Agents to have an effect?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#HowLongWillItTakeForBiologicAgentsToHaveAnEffect?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectSomeValuesFrom(ema:hasTheme jia:BiologicAgents))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:PositiveEffect))) ObjectHasValue(ema:hasTheme jia:Duration)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#HowLongWillItTakeForBiologicAgentsToHaveAnEffect?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#HowLongWillItTakeForCorticosteroidsToHaveAnEffect?> (<http://niche.cs.dal.ca/EMA_JIA.owl#HowLongWillItTakeForCorticosteroidsToHaveAnEffect?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#HowLongWillItTakeForCorticosteroidsToHaveAnEffect?> "How long will it take for Corticosteroids to have an effect?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#HowLongWillItTakeForCorticosteroidsToHaveAnEffect?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectSomeValuesFrom(ema:hasTheme jia:Corticosteroids))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:PositiveEffect))) ObjectHasValue(ema:hasTheme jia:Duration)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#HowLongWillItTakeForCorticosteroidsToHaveAnEffect?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#HowLongWillItTakeForMethotrexateToHaveAnEffect?> (<http://niche.cs.dal.ca/EMA_JIA.owl#HowLongWillItTakeForMethotrexateToHaveAnEffect?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#HowLongWillItTakeForMethotrexateToHaveAnEffect?> "How long will it take for methotrexate to have an effect?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#HowLongWillItTakeForMethotrexateToHaveAnEffect?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Methotrexate))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:PositiveEffect))) ObjectHasValue(ema:hasTheme jia:Duration)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#HowLongWillItTakeForMethotrexateToHaveAnEffect?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#HowLongWillItTakeForNSAIDsToHaveAnEffect?> (<http://niche.cs.dal.ca/EMA_JIA.owl#HowLongWillItTakeForNSAIDsToHaveAnEffect?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#HowLongWillItTakeForNSAIDsToHaveAnEffect?> "How long will it take for NSAIDs to have an effect?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#HowLongWillItTakeForNSAIDsToHaveAnEffect?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectSomeValuesFrom(ema:hasTheme jia:NSAIDs))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:PositiveEffect))) ObjectHasValue(ema:hasTheme jia:Duration)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#HowLongWillItTakeForNSAIDsToHaveAnEffect?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#HowOftenDoChildrenWithOligoarticularJIANeedToHaveTheirEyesChecked?> (<http://niche.cs.dal.ca/EMA_JIA.owl#HowOftenDoChildrenWithOligoarticularJIANeedToHaveTheirEyesChecked?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#HowOftenDoChildrenWithOligoarticularJIANeedToHaveTheirEyesChecked?> "How often do children with oligoarticular JIA need to have their eyes checked?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#HowOftenDoChildrenWithOligoarticularJIANeedToHaveTheirEyesChecked?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:Duration) ObjectHasValue(ema:hasTheme jia:EyeExam)))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:OligoarticularJIA))) ObjectHasValue(ema:hasTheme jia:TakeTest)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#HowOftenDoChildrenWithOligoarticularJIANeedToHaveTheirEyesChecked?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#HowShouldIApplyHeatIfHeatingPadsOrMagicBagsDoNotWork?> (<http://niche.cs.dal.ca/EMA_JIA.owl#HowShouldIApplyHeatIfHeatingPadsOrMagicBagsDoNotWork?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#HowShouldIApplyHeatIfHeatingPadsOrMagicBagsDoNotWork?> "How should I apply heat if heating pads or magic bags don't work?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#HowShouldIApplyHeatIfHeatingPadsOrMagicBagsDoNotWork?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:Heat) ObjectHasValue(ema:hasTheme jia:NegativeOrPoorEffect)))) ObjectHasValue(ema:hasTheme jia:Application-Other)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#HowShouldIApplyHeatIfHeatingPadsOrMagicBagsDoNotWork?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#HowShouldIApplyHeatToThoseWithSkinConditions?> (<http://niche.cs.dal.ca/EMA_JIA.owl#HowShouldIApplyHeatToThoseWithSkinConditions?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#HowShouldIApplyHeatToThoseWithSkinConditions?> "How should I apply heat to those with skin conditions?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#HowShouldIApplyHeatToThoseWithSkinConditions?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme ema:Recommendation) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:Heat) ObjectHasValue(ema:hasTheme jia:SkinConditions))))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#HowShouldIApplyHeatToThoseWithSkinConditions?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#HowShouldIApplyHeatToYoungChildren?> (<http://niche.cs.dal.ca/EMA_JIA.owl#HowShouldIApplyHeatToYoungChildren?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#HowShouldIApplyHeatToYoungChildren?> "How should I apply heat to young children?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#HowShouldIApplyHeatToYoungChildren?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme ema:Recommendation) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:Heat) ObjectHasValue(ema:hasTheme jia:Young))))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#HowShouldIApplyHeatToYoungChildren?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#HowShouldIApplyIceToYoungChildren?> (<http://niche.cs.dal.ca/EMA_JIA.owl#HowShouldIApplyIceToYoungChildren?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#HowShouldIApplyIceToYoungChildren?> "How should I apply ice to young children?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#HowShouldIApplyIceToYoungChildren?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme ema:Recommendation) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:Ice) ObjectHasValue(ema:hasTheme jia:Young))))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#HowShouldIApplyIceToYoungChildren?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#HowShouldIStoreMethotrexate?> (<http://niche.cs.dal.ca/EMA_JIA.owl#HowShouldIStoreMethotrexate?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#HowShouldIStoreMethotrexate?> "How should I store methotrexate?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#HowShouldIStoreMethotrexate?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme ema:Recommendation) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Methotrexate))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:StorageTips)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#HowShouldIStoreMethotrexate?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#IsBedRestGoodForPeopleWithJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#IsBedRestGoodForPeopleWithJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#IsBedRestGoodForPeopleWithJIA?> "Is bed rest good for people with JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#IsBedRestGoodForPeopleWithJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:Effectiveness) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:BedRest)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#IsBedRestGoodForPeopleWithJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#IsExerciseGoodForPeopleWithJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#IsExerciseGoodForPeopleWithJIA?>)
+
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#IsExerciseGoodForPeopleWithJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:Effectiveness) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectSomeValuesFrom(ema:hasTheme jia:PhysicalTherapyAndExercise)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#IsExerciseGoodForPeopleWithJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#IsJIAContagious?> (<http://niche.cs.dal.ca/EMA_JIA.owl#IsJIAContagious?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#IsJIAContagious?> "Is JIA contagious?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#IsJIAContagious?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:InfectiousRelated) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:JuvenileIdiopathicArthritis)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#IsJIAContagious?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#IsJIAHereditary?> (<http://niche.cs.dal.ca/EMA_JIA.owl#IsJIAHereditary?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#IsJIAHereditary?> "Is JIA hereditary?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#IsJIAHereditary?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:HeredityRelated) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:JuvenileIdiopathicArthritis)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#IsJIAHereditary?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfEnthesitis-relatedJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfEnthesitis-relatedJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfEnthesitis-relatedJIA?> "What affects the risk of Enthesitis-related JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfEnthesitis-relatedJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:Likelihood) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Enthesitis-relatedJIA)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfEnthesitis-relatedJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfOligoarticularJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfOligoarticularJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfOligoarticularJIA?> "What affects the risk of Oligoarticular JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfOligoarticularJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:Likelihood) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:OligoarticularJIA)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfOligoarticularJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfPolyarticularRFNegativeJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfPolyarticularRFNegativeJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfPolyarticularRFNegativeJIA?> "What affects the risk of Polyarticular RF negative JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfPolyarticularRFNegativeJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:Likelihood) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:PolyarticularJIA) ObjectHasValue(ema:hasTheme jia:RFNegative))))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfPolyarticularRFNegativeJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfPolyarticularRFPositiveJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfPolyarticularRFPositiveJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfPolyarticularRFPositiveJIA?> "What affects the risk of Polyarticular RF positive JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfPolyarticularRFPositiveJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:Likelihood) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:PolyarticularJIA) ObjectHasValue(ema:hasTheme jia:RFPositive))))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfPolyarticularRFPositiveJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfPsoriaticJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfPsoriaticJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfPsoriaticJIA?> "What affects the risk of Psoriatic JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfPsoriaticJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:Likelihood) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:PsoriaticJIA)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfPsoriaticJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfSystemicJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfSystemicJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfSystemicJIA?> "What affects the risk of Systemic JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfSystemicJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:Likelihood) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:SystemicJIA)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfSystemicJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfUveitis?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfUveitis?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfUveitis?> "What affects the risk of uveitis?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfUveitis?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:Likelihood) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Uveitis)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAffectsTheRiskOfUveitis?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreBiologicAgents?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreBiologicAgents?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreBiologicAgents?> "What are Biologic Agents?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreBiologicAgents?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:BiologicAgents) ObjectHasValue(ema:hasTheme jia:Definition)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreBiologicAgents?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreCorticosteroids?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreCorticosteroids?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreCorticosteroids?> "What are Corticosteroids?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreCorticosteroids?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:Corticosteroids) ObjectHasValue(ema:hasTheme jia:Definition)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreCorticosteroids?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreDMARDs?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreDMARDs?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreDMARDs?> "What are DMARDs?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreDMARDs?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:DMARDs) ObjectHasValue(ema:hasTheme jia:Definition)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreDMARDs?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreGoodPhysicalActivitiesForPeopleWithJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreGoodPhysicalActivitiesForPeopleWithJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreGoodPhysicalActivitiesForPeopleWithJIA?> "What are good physical activities for people with JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreGoodPhysicalActivitiesForPeopleWithJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:PhysicalTherapyAndExercise) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:PositiveEffect)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreGoodPhysicalActivitiesForPeopleWithJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreNSAIDs?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreNSAIDs?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreNSAIDs?> "What are NSAIDs?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreNSAIDs?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:NSAIDs) ObjectHasValue(ema:hasTheme jia:Definition)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreNSAIDs?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreSplints?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreSplints?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreSplints?> "What are splints?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreSplints?> ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:Definition) ObjectHasValue(ema:hasTheme jia:Splint)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreSplints?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreTheSideEffectsOfCorticosteroids?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreTheSideEffectsOfCorticosteroids?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreTheSideEffectsOfCorticosteroids?> "What are the side effects of Corticosteroids?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreTheSideEffectsOfCorticosteroids?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:SideEffects) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectSomeValuesFrom(ema:hasTheme jia:Corticosteroids)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreTheSideEffectsOfCorticosteroids?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreTheSideEffectsOfMethotrexate?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreTheSideEffectsOfMethotrexate?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreTheSideEffectsOfMethotrexate?> "What are the side effects of methotrexate?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreTheSideEffectsOfMethotrexate?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:SideEffects) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Methotrexate)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreTheSideEffectsOfMethotrexate?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreTheSideEffectsOfNSAIDs?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreTheSideEffectsOfNSAIDs?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreTheSideEffectsOfNSAIDs?> "What are the side effects of NSAIDs?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreTheSideEffectsOfNSAIDs?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:SideEffects) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectSomeValuesFrom(ema:hasTheme jia:NSAIDs)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreTheSideEffectsOfNSAIDs?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreTheSideEffectsOfSteroids?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreTheSideEffectsOfSteroids?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreTheSideEffectsOfSteroids?> "What are the side effects of steroids?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreTheSideEffectsOfSteroids?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:SideEffects) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectSomeValuesFrom(ema:hasTheme jia:Corticosteroids)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatAreTheSideEffectsOfSteroids?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanBeExpectedFromAFirstFlare?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanBeExpectedFromAFirstFlare?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanBeExpectedFromAFirstFlare?> "What can be expected from a first flare?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanBeExpectedFromAFirstFlare?> ObjectHasValue(ema:hasTheme jia:FirstFlare))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanBeExpectedFromAFirstFlare?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanCauseAJIAFlare??> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanCauseAJIAFlare??>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanCauseAJIAFlare??> "What can cause a JIA flare?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanCauseAJIAFlare??> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Flare))) ObjectHasValue(ema:hasTheme jia:Cause)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanCauseAJIAFlare??> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToManageTheSideEffectsOfMethotrexate?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToManageTheSideEffectsOfMethotrexate?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToManageTheSideEffectsOfMethotrexate?> "What can I do to manage the side effects of Methotrexate?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToManageTheSideEffectsOfMethotrexate?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectSomeValuesFrom(ema:hasTheme jia:SideEffects))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Methotrexate))) ObjectHasValue(ema:hasTheme jia:ImproveSymptoms)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToManageTheSideEffectsOfMethotrexate?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatAFlare?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatAFlare?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatAFlare?> "What can I do to treat a flare?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatAFlare?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme ema:Recommendation) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Flare)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatAFlare?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatInjuriesOrSorenessAfterSports?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatInjuriesOrSorenessAfterSports?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatInjuriesOrSorenessAfterSports?> "What can I do to treat injuries or soreness after sports?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatInjuriesOrSorenessAfterSports?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme ema:Recommendation) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectUnionOf(ObjectHasValue(ema:hasTheme jia:AfterBeingInjured) ObjectHasValue(ema:hasTheme jia:AfterPlayingSports))))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatInjuriesOrSorenessAfterSports?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatMorningStiffness?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatMorningStiffness?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatMorningStiffness?> "What can I do to treat morning stiffness?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatMorningStiffness?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme ema:Recommendation) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:Stiffness) ObjectHasValue(ema:hasTheme jia:WhenWakingUp))))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatMorningStiffness?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatPain?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatPain?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatPain?> "What can I do to treat pain?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatPain?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme ema:Recommendation) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectSomeValuesFrom(ema:hasTheme jia:Treatments))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Pain)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatPain?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatStiffness?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatStiffness?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatStiffness?> "What can I do to treat stiffness?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatStiffness?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme ema:Recommendation) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Stiffness)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatStiffness?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatSwollenJoints?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatSwollenJoints?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatSwollenJoints?> "What can I do to treat swollen joints?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatSwollenJoints?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme ema:Recommendation) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:Joints) ObjectHasValue(ema:hasTheme jia:Inflammation)))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectSomeValuesFrom(ema:hasTheme jia:Treatments)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatCanIDoToTreatSwollenJoints?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsEnthesitis-relatedJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsEnthesitis-relatedJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsEnthesitis-relatedJIA?> "What is Enthesitis-related JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsEnthesitis-relatedJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Enthesitis-relatedJIA))) ObjectHasValue(ema:hasTheme jia:Definition)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsEnthesitis-relatedJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsOligoarticular-extendedJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsOligoarticular-extendedJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsOligoarticular-extendedJIA?> "What is Oligoarticular-extended JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsOligoarticular-extendedJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:Extend) ObjectHasValue(ema:hasTheme jia:OligoarticularJIA)))) ObjectHasValue(ema:hasTheme jia:Definition)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsOligoarticular-extendedJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsOligoarticular-persistentJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsOligoarticular-persistentJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsOligoarticular-persistentJIA?> "What is Oligoarticular-persistent JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsOligoarticular-persistentJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:NotExtend))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:OligoarticularJIA))) ObjectHasValue(ema:hasTheme jia:Definition)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsOligoarticular-persistentJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsOligoarticularJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsOligoarticularJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsOligoarticularJIA?> "What is oligoarticular JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsOligoarticularJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:OligoarticularJIA))) ObjectHasValue(ema:hasTheme jia:Definition)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsOligoarticularJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsPolyarticularRFNegativeJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsPolyarticularRFNegativeJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsPolyarticularRFNegativeJIA?> "What is Polyarticular RF negative JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsPolyarticularRFNegativeJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:PolyarticularJIA) ObjectHasValue(ema:hasTheme jia:RFNegative)))) ObjectHasValue(ema:hasTheme jia:Definition)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsPolyarticularRFNegativeJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsPolyarticularRFPositiveJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsPolyarticularRFPositiveJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsPolyarticularRFPositiveJIA?> "What is Polyarticular RF positive JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsPolyarticularRFPositiveJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:PolyarticularJIA) ObjectHasValue(ema:hasTheme jia:RFPositive)))) ObjectHasValue(ema:hasTheme jia:Definition)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsPolyarticularRFPositiveJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsPsoriaticJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsPsoriaticJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsPsoriaticJIA?> "What is Psoriatic JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsPsoriaticJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:PsoriaticJIA))) ObjectHasValue(ema:hasTheme jia:Definition)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsPsoriaticJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsSystemicJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsSystemicJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsSystemicJIA?> "What is Systemic JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsSystemicJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:SystemicJIA))) ObjectHasValue(ema:hasTheme jia:Definition)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsSystemicJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheBestWayToApplyIceToHandsOrFeet?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheBestWayToApplyIceToHandsOrFeet?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheBestWayToApplyIceToHandsOrFeet?> "What is the best way to apply ice to hands or feet?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheBestWayToApplyIceToHandsOrFeet?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectUnionOf(ObjectHasValue(ema:hasTheme jia:Feet) ObjectHasValue(ema:hasTheme jia:Hands)) ObjectHasValue(ema:hasTheme jia:Ice)))) ObjectHasValue(ema:hasTheme jia:Application-Other)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheBestWayToApplyIceToHandsOrFeet?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForEnthesitis-relatedJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForEnthesitis-relatedJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForEnthesitis-relatedJIA?> "What is the chance of achieving inactive disease for Enthesitis-related JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForEnthesitis-relatedJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Enthesitis-relatedJIA))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:InactiveDisease))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForEnthesitis-relatedJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForJIA?> "What is the chance of achieving inactive disease for JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:InactiveDisease))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:JuvenileIdiopathicArthritis))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForOligoarticularJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForOligoarticularJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForOligoarticularJIA?> "What is the chance of achieving inactive disease for Oligoarticular JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForOligoarticularJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:InactiveDisease))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:OligoarticularJIA))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForOligoarticularJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForPsoriaticJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForPsoriaticJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForPsoriaticJIA?> "What is the chance of achieving inactive disease for Psoriatic JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForPsoriaticJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:InactiveDisease))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:PsoriaticJIA))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForPsoriaticJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForRFNegativePolyarticularJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForRFNegativePolyarticularJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForRFNegativePolyarticularJIA?> "What is the chance of achieving inactive disease for RF negative Polyarticular JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForRFNegativePolyarticularJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:PolyarticularJIA) ObjectHasValue(ema:hasTheme jia:RFNegative)))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:InactiveDisease))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForRFNegativePolyarticularJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForRFPositivePolyarticularJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForRFPositivePolyarticularJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForRFPositivePolyarticularJIA?> "What is the chance of acheiving inactive disease for RF positive Polyarticular JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForRFPositivePolyarticularJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:PolyarticularJIA) ObjectHasValue(ema:hasTheme jia:RFPositive)))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:InactiveDisease))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForRFPositivePolyarticularJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForSystemicJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForSystemicJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForSystemicJIA?> "What is the chance of achieving inactive disease for Systemic JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForSystemicJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:InactiveDisease))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:SystemicJIA))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingInactiveDiseaseForSystemicJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInEnthesitis-relatedJIAWithin5Years?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInEnthesitis-relatedJIAWithin5Years?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInEnthesitis-relatedJIAWithin5Years?> "What is the chance of achieving remission in Enthesitis-related JIA within 5 years?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInEnthesitis-relatedJIAWithin5Years?> ObjectIntersectionOf(ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:Chance) ObjectHasValue(ema:hasTheme jia:Remission)) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Enthesitis-relatedJIA)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInEnthesitis-relatedJIAWithin5Years?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInJIAWithin5Years?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInJIAWithin5Years?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInJIAWithin5Years?> "What is the chance of achieving remission in JIA within 5 years?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInJIAWithin5Years?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:JuvenileIdiopathicArthritis))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Remission))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInJIAWithin5Years?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInOligarticularJIAWithin5Years?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInOligarticularJIAWithin5Years?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInOligarticularJIAWithin5Years?> "What is the chance of achieving remission in Oligarticular JIA within 5 years?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInOligarticularJIAWithin5Years?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:OligoarticularJIA))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Remission))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInOligarticularJIAWithin5Years?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInPsoriaticJIAWithin5Years?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInPsoriaticJIAWithin5Years?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInPsoriaticJIAWithin5Years?> "What is the chance of achieving remission in Psoriatic JIA within 5 years?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInPsoriaticJIAWithin5Years?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:PsoriaticJIA))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Remission))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInPsoriaticJIAWithin5Years?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInRFNegativePolyarticularJIAWithin5Years?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInRFNegativePolyarticularJIAWithin5Years?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInRFNegativePolyarticularJIAWithin5Years?> "What is the chance of achieving remission in RF negative Polyarticular JIA within 5 years?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInRFNegativePolyarticularJIAWithin5Years?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:PolyarticularJIA) ObjectHasValue(ema:hasTheme jia:RFNegative)))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Remission))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInRFNegativePolyarticularJIAWithin5Years?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInRFPositivePolyarticularJIAWithin5Years?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInRFPositivePolyarticularJIAWithin5Years?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInRFPositivePolyarticularJIAWithin5Years?> "What is the chance of achieving remission in RF positive Polyarticular JIA within 5 years?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInRFPositivePolyarticularJIAWithin5Years?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:PolyarticularJIA) ObjectHasValue(ema:hasTheme jia:RFPositive)))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Remission))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInRFPositivePolyarticularJIAWithin5Years?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInSystemicJIAWithin5Years?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInSystemicJIAWithin5Years?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInSystemicJIAWithin5Years?> "What is the chance of achieving remission in Systemic JIA within 5 years?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInSystemicJIAWithin5Years?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Remission))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:SystemicJIA))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfAchievingRemissionInSystemicJIAWithin5Years?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForEnthesitis-relatedJIAWithin5Years?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForEnthesitis-relatedJIAWithin5Years?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForEnthesitis-relatedJIAWithin5Years?> "What is the chance of discontinuing treatment for Enthesitis-related JIA within 5 years?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForEnthesitis-relatedJIAWithin5Years?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:DiscontinuingTreatment))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Enthesitis-relatedJIA))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForEnthesitis-relatedJIAWithin5Years?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForOligoarticularJIAWithin5Years?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForOligoarticularJIAWithin5Years?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForOligoarticularJIAWithin5Years?> "What is the chance of discontinuing treatment for Oligoarticular JIA within 5 years?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForOligoarticularJIAWithin5Years?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:DiscontinuingTreatment))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:OligoarticularJIA))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForOligoarticularJIAWithin5Years?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForPsoriaticJIAWithin5Years?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForPsoriaticJIAWithin5Years?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForPsoriaticJIAWithin5Years?> "What is the chance of discontinuing treatment for Psoriatic JIA within 5 years?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForPsoriaticJIAWithin5Years?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:DiscontinuingTreatment))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:PsoriaticJIA))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForPsoriaticJIAWithin5Years?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForRFNegativePolyarticularJIAWithin5Years?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForRFNegativePolyarticularJIAWithin5Years?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForRFNegativePolyarticularJIAWithin5Years?> "What is the chance of discontinuing treatment for RF negative polyarticular JIA within 5 years?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForRFNegativePolyarticularJIAWithin5Years?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:PolyarticularJIA) ObjectHasValue(ema:hasTheme jia:RFNegative)))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:DiscontinuingTreatment))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForRFNegativePolyarticularJIAWithin5Years?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForRFPositivePolyarticularJIAWithin5Years?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForRFPositivePolyarticularJIAWithin5Years?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForRFPositivePolyarticularJIAWithin5Years?> "What is the chance of discontinuing treatment for RF positive polyarticular JIA within 5 years?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForRFPositivePolyarticularJIAWithin5Years?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:PolyarticularJIA) ObjectHasValue(ema:hasTheme jia:RFPositive)))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:DiscontinuingTreatment))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForRFPositivePolyarticularJIAWithin5Years?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForSystematicJIAWithin5Years?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForSystematicJIAWithin5Years?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForSystematicJIAWithin5Years?> "What is the chance of discontinuing treatment for Systemic JIA within 5 years?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForSystematicJIAWithin5Years?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:DiscontinuingTreatment))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:SystemicJIA))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentForSystematicJIAWithin5Years?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentWithin5YearsForJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentWithin5YearsForJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentWithin5YearsForJIA?> "What is the chance of discontinuing treatment for JIA within 5 years?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentWithin5YearsForJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:DiscontinuingTreatment))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:JuvenileIdiopathicArthritis))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfDiscontinuingTreatmentWithin5YearsForJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfGettingJointInjections?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfGettingJointInjections?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfGettingJointInjections?> "What is the chance of getting joint injections?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfGettingJointInjections?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:JointInjection))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfGettingJointInjections?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareAfterAttainingInactiveDisease?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareAfterAttainingInactiveDisease?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareAfterAttainingInactiveDisease?> "What is the chance of having a flare after attaining inactive disease?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareAfterAttainingInactiveDisease?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Flare))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:InactiveDisease))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareAfterAttainingInactiveDisease?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactiveEnthesitis-relatedJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactiveEnthesitis-relatedJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactiveEnthesitis-relatedJIA?> "What is the chance of having a flare within 1 year of inactive Enthesitis-related JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactiveEnthesitis-relatedJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Enthesitis-relatedJIA))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Flare))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactiveEnthesitis-relatedJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactiveOligoarticularJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactiveOligoarticularJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactiveOligoarticularJIA?> "What is the chance of having a flare within 1 year of inactive Oligoarticular JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactiveOligoarticularJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Flare))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:OligoarticularJIA))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactiveOligoarticularJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactivePsoriaticJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactivePsoriaticJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactivePsoriaticJIA?> "What is the chance of having a flare within 1 year of inactive Psoriatic JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactivePsoriaticJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Flare))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:PsoriaticJIA))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactivePsoriaticJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactiveRFNegativePolyarticularJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactiveRFNegativePolyarticularJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactiveRFNegativePolyarticularJIA?> "What is the chance of having a flare within 1 year of inactive RF negative Polyarticular JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactiveRFNegativePolyarticularJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:PolyarticularJIA) ObjectHasValue(ema:hasTheme jia:RFNegative)))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Flare))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactiveRFNegativePolyarticularJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactiveRFPositivePolyarticularJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactiveRFPositivePolyarticularJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactiveRFPositivePolyarticularJIA?> "What is the chance of having a flare within 1 year of inactive RF positive Polyarticular JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactiveRFPositivePolyarticularJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:PolyarticularJIA) ObjectHasValue(ema:hasTheme jia:RFPositive)))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Flare))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactiveRFPositivePolyarticularJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactiveSystemicJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactiveSystemicJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactiveSystemicJIA?> "What is the chance of having a flare within 1 year of inactive Systemic JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactiveSystemicJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Flare))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:SystemicJIA))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfHavingAFlareWithin1YearOfInactiveSystemicJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfOligoarticularJIABecomingPolyarticularJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfOligoarticularJIABecomingPolyarticularJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfOligoarticularJIABecomingPolyarticularJIA?> "What is the chance of Oligoarticular JIA becoming Polyarticular JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfOligoarticularJIABecomingPolyarticularJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Extend))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:OligoarticularJIA))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfOligoarticularJIABecomingPolyarticularJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfTakingBiologics?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfTakingBiologics?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfTakingBiologics?> "What is the chance of taking Biologics?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfTakingBiologics?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:BiologicAgents-All))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfTakingBiologics?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfTakingDMARDs?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfTakingDMARDs?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfTakingDMARDs?> "What is the chance of taking DMARDs?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfTakingDMARDs?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:DMARDs-All))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfTakingDMARDs?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfTakingNSAIDs?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfTakingNSAIDs?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfTakingNSAIDs?> "What is the chance of taking NSAIDs?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfTakingNSAIDs?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:NSAIDs-All))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfTakingNSAIDs?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfTakingOralCorticosteroids?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfTakingOralCorticosteroids?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfTakingOralCorticosteroids?> "What is the chance of taking oral corticosteroids?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfTakingOralCorticosteroids?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:OralCorticosteroid))) ObjectHasValue(ema:hasTheme jia:Chance)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceOfTakingOralCorticosteroids?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceThatIWillNeedSurgeryBecauseOfJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceThatIWillNeedSurgeryBecauseOfJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceThatIWillNeedSurgeryBecauseOfJIA?> "What is the chance that I will need surgery because of JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceThatIWillNeedSurgeryBecauseOfJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:Likelihood) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Surgery))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:UseTreatment)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheChanceThatIWillNeedSurgeryBecauseOfJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheDifferenceBetweenJIARemissionAndInactiveDisease?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheDifferenceBetweenJIARemissionAndInactiveDisease?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheDifferenceBetweenJIARemissionAndInactiveDisease?> "What is the difference between JIA remission and inactive disease?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheDifferenceBetweenJIARemissionAndInactiveDisease?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectUnionOf(ObjectHasValue(ema:hasTheme jia:InactiveDisease) ObjectHasValue(ema:hasTheme jia:Remission)))) ObjectHasValue(ema:hasTheme jia:Definition)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheDifferenceBetweenJIARemissionAndInactiveDisease?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheLikelihoodOfHavingJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheLikelihoodOfHavingJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheLikelihoodOfHavingJIA?> "What is the likelihood of having JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheLikelihoodOfHavingJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:Likelihood) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:Definition) ObjectHasValue(ema:hasTheme jia:JuvenileIdiopathicArthritis))))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheLikelihoodOfHavingJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheRheumatologyClinicPhoneNumber?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheRheumatologyClinicPhoneNumber?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheRheumatologyClinicPhoneNumber?> "What is the Rheumatology Clinic phone number?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheRheumatologyClinicPhoneNumber?> ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:ContactDetails) ObjectHasValue(ema:hasTheme jia:PediatricRheumatologyClinic)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsTheRheumatologyClinicPhoneNumber?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsUveitis?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsUveitis?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsUveitis?> "What is uveitis?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsUveitis?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Uveitis))) ObjectHasValue(ema:hasTheme jia:Definition)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatIsUveitis?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatJointsAreCommonlyAffectedByOligoarticularJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatJointsAreCommonlyAffectedByOligoarticularJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatJointsAreCommonlyAffectedByOligoarticularJIA?> "What joints are commonly affected by oligoarticular JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatJointsAreCommonlyAffectedByOligoarticularJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:Joints) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:OligoarticularJIA)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatJointsAreCommonlyAffectedByOligoarticularJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatJointsAreCommonlyAffectedByPolyarticularRFNegativeJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatJointsAreCommonlyAffectedByPolyarticularRFNegativeJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatJointsAreCommonlyAffectedByPolyarticularRFNegativeJIA?> "What joints are commonly affected by Polyarticular RF negative JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatJointsAreCommonlyAffectedByPolyarticularRFNegativeJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:Joints) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:PolyarticularJIA) ObjectHasValue(ema:hasTheme jia:RFNegative))))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatJointsAreCommonlyAffectedByPolyarticularRFNegativeJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatJointsAreCommonlyAffectedByPolyarticularRFPositiveJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatJointsAreCommonlyAffectedByPolyarticularRFPositiveJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatJointsAreCommonlyAffectedByPolyarticularRFPositiveJIA?> "What joints are commonly affected by Polyarticular RF positive JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatJointsAreCommonlyAffectedByPolyarticularRFPositiveJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:Joints) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:PolyarticularJIA) ObjectHasValue(ema:hasTheme jia:RFPositive))))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatJointsAreCommonlyAffectedByPolyarticularRFPositiveJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForEnthesitis-relatedJIACanIExpect?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForEnthesitis-relatedJIACanIExpect?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForEnthesitis-relatedJIACanIExpect?> "What outcomes for Enthesitis-related JIA can I expect?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForEnthesitis-relatedJIACanIExpect?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:Outcomes) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Enthesitis-relatedJIA)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForEnthesitis-relatedJIACanIExpect?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForOligoarticularJIACanIExpect?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForOligoarticularJIACanIExpect?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForOligoarticularJIACanIExpect?> "What outcomes for oligoarticular JIA can I expect?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForOligoarticularJIACanIExpect?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:Outcomes) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:OligoarticularJIA)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForOligoarticularJIACanIExpect?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForPolyarticularRFNegativeJIACanIExpect?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForPolyarticularRFNegativeJIACanIExpect?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForPolyarticularRFNegativeJIACanIExpect?> "What outcomes for Polyarticular RF positive JIA can I expect?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForPolyarticularRFNegativeJIACanIExpect?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:Outcomes) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:PolyarticularJIA) ObjectHasValue(ema:hasTheme jia:RFNegative))))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForPolyarticularRFNegativeJIACanIExpect?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForPolyarticularRFPositiveJIACanIExpect?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForPolyarticularRFPositiveJIACanIExpect?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForPolyarticularRFPositiveJIACanIExpect?> "What outcomes for Polyarticular RF positive JIA can I expect?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForPolyarticularRFPositiveJIACanIExpect?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:Outcomes) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:PolyarticularJIA) ObjectHasValue(ema:hasTheme jia:RFPositive))))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForPolyarticularRFPositiveJIACanIExpect?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForPsoriaticJIACanIExpect?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForPsoriaticJIACanIExpect?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForPsoriaticJIACanIExpect?> "What outcomes for Psoriatic JIA can I expect?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForPsoriaticJIACanIExpect?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:Outcomes) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:PsoriaticJIA)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForPsoriaticJIACanIExpect?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForSystemicJIACanIExpect?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForSystemicJIACanIExpect?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForSystemicJIACanIExpect?> "What outcomes for Systemic JIA can I expect?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForSystemicJIACanIExpect?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:Outcomes) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:SystemicJIA)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatOutcomesForSystemicJIACanIExpect?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatPossibleOutcomesCanUveitisCause?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatPossibleOutcomesCanUveitisCause?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatPossibleOutcomesCanUveitisCause?> "What possible outcomes can uveitis cause?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatPossibleOutcomesCanUveitisCause?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Uveitis))) ObjectHasValue(ema:hasTheme jia:Cause)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatPossibleOutcomesCanUveitisCause?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfI'mGoingToHaveSurgeryWhileTakingMethotrexate?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfI'mGoingToHaveSurgeryWhileTakingMethotrexate?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfI'mGoingToHaveSurgeryWhileTakingMethotrexate?> "What should I do if I'm going to have surgery while taking methotrexate?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfI'mGoingToHaveSurgeryWhileTakingMethotrexate?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme ema:Recommendation) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:Methotrexate) ObjectHasValue(ema:hasTheme jia:Surgery))))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfI'mGoingToHaveSurgeryWhileTakingMethotrexate?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIAmUnsureAboutTheMethotrexateDose?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIAmUnsureAboutTheMethotrexateDose?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIAmUnsureAboutTheMethotrexateDose?> "What should I do if I am unsure about the methotrexate dose?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIAmUnsureAboutTheMethotrexateDose?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme ema:Recommendation) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:FeelingUnsure) ObjectHasValue(ema:hasTheme jia:Methotrexate))))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIAmUnsureAboutTheMethotrexateDose?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIFeelUnwellWhileTakingMethotrexate?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIFeelUnwellWhileTakingMethotrexate?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIFeelUnwellWhileTakingMethotrexate?> "What should I do if I feel unwell while taking methotrexate?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIFeelUnwellWhileTakingMethotrexate?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme ema:Recommendation) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:FeelingUnwell) ObjectHasValue(ema:hasTheme jia:Methotrexate))))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIFeelUnwellWhileTakingMethotrexate?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIHaveAHighFeverWhileTakingMethotrexate?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIHaveAHighFeverWhileTakingMethotrexate?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIHaveAHighFeverWhileTakingMethotrexate?> "What should I do if I have a high fever while taking methotrexate?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIHaveAHighFeverWhileTakingMethotrexate?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme ema:Recommendation) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:Fever) ObjectHasValue(ema:hasTheme jia:Methotrexate))))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIHaveAHighFeverWhileTakingMethotrexate?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIHaveAnInfectionWhileTakingMethotrexate?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIHaveAnInfectionWhileTakingMethotrexate?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIHaveAnInfectionWhileTakingMethotrexate?> "What should I do if I have an infection while taking methotrexate?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIHaveAnInfectionWhileTakingMethotrexate?> 
+	ObjectIntersectionOf(
+		ObjectSomeValuesFrom(:hasTheme jia:Recommendation) 
+		ObjectSomeValuesFrom(:isElementOf 
+			ObjectSomeValuesFrom(:hasElement ObjectIntersectionOf(ObjectHasValue(:hasTheme jia:Infection) ObjectHasValue(:hasTheme jia:Methotrexate))))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIHaveAnInfectionWhileTakingMethotrexate?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIHaveArthritisInMyNeckOrJaw?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIHaveArthritisInMyNeckOrJaw?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIHaveArthritisInMyNeckOrJaw?> "What should I do if I have arthritis in my neck or jaw?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIHaveArthritisInMyNeckOrJaw?> ObjectIntersectionOf(ObjectUnionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:Arthritis) ObjectHasValue(ema:hasTheme jia:Jaw)))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:Arthritis) ObjectHasValue(ema:hasTheme jia:Neck))))) ObjectSomeValuesFrom(ema:hasTheme ema:Recommendation)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIHaveArthritisInMyNeckOrJaw?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIMissedADoseOfMethotrexate?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIMissedADoseOfMethotrexate?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIMissedADoseOfMethotrexate?> "What should I do if I missed a dose of methotrexate?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIMissedADoseOfMethotrexate?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme ema:Recommendation) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:Methotrexate) ObjectHasValue(ema:hasTheme jia:MissedDose))))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIMissedADoseOfMethotrexate?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIWantToStopTakingMethotrexate?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIWantToStopTakingMethotrexate?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIWantToStopTakingMethotrexate?> "What should I do if I want to stop taking methotrexate?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIWantToStopTakingMethotrexate?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme ema:Recommendation) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:Methotrexate) ObjectHasValue(ema:hasTheme jia:WantToStopTreatment))))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIWantToStopTakingMethotrexate?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIWantToUseAlternativeTherapies?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIWantToUseAlternativeTherapies?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIWantToUseAlternativeTherapies?> "What should I do if I want to use alternative therapies?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIWantToUseAlternativeTherapies?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme ema:Recommendation) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:AlternativeTherapies)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIWantToUseAlternativeTherapies?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIWillBeTravellingWhileTakingBiologics?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIWillBeTravellingWhileTakingBiologics?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIWillBeTravellingWhileTakingBiologics?> "What should I do if I will be travelling while taking biologics?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIWillBeTravellingWhileTakingBiologics?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme ema:Recommendation) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:BiologicAgents-All) ObjectHasValue(ema:hasTheme jia:WillBeTravelling))))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIWillBeTravellingWhileTakingBiologics?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIWillBeTravellingWhileTakingMethotrexate?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIWillBeTravellingWhileTakingMethotrexate?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIWillBeTravellingWhileTakingMethotrexate?> "What should I do if I will be travelling while taking methotrexate?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIWillBeTravellingWhileTakingMethotrexate?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme ema:Recommendation) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:Methotrexate) ObjectHasValue(ema:hasTheme jia:WillBeTravelling))))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfIWillBeTravellingWhileTakingMethotrexate?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfMyMethotrexateBloodWorkResultsAreAbnormal?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfMyMethotrexateBloodWorkResultsAreAbnormal?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfMyMethotrexateBloodWorkResultsAreAbnormal?> "What should I do if my methotrexate blood work results are abnormal?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfMyMethotrexateBloodWorkResultsAreAbnormal?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme ema:Recommendation) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:AbnormalTestResults) ObjectHasValue(ema:hasTheme jia:BloodWork-All) ObjectHasValue(ema:hasTheme jia:Methotrexate))))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldIDoIfMyMethotrexateBloodWorkResultsAreAbnormal?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldn'tIDoWhileTakingMethotrexate?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldn'tIDoWhileTakingMethotrexate?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldn'tIDoWhileTakingMethotrexate?> "What shouldn't I do while taking methotrexate?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldn'tIDoWhileTakingMethotrexate?> ObjectIntersectionOf(ObjectUnionOf(ObjectHasValue(ema:hasTheme jia:AvoidBehaviour) ObjectHasValue(ema:hasTheme jia:DoNotUseTreatment)) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Methotrexate)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatShouldn'tIDoWhileTakingMethotrexate?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatSymptomsAreCommonlyAssociatedWithEnthesitis-relatedJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatSymptomsAreCommonlyAssociatedWithEnthesitis-relatedJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatSymptomsAreCommonlyAssociatedWithEnthesitis-relatedJIA?> "What symptoms are commonly associated with Enthesitis-related JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatSymptomsAreCommonlyAssociatedWithEnthesitis-relatedJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:SymptomsAndSigns) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Enthesitis-relatedJIA)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatSymptomsAreCommonlyAssociatedWithEnthesitis-relatedJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatSymptomsAreCommonlyAssociatedWithPsoriaticJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatSymptomsAreCommonlyAssociatedWithPsoriaticJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatSymptomsAreCommonlyAssociatedWithPsoriaticJIA?> "What symptoms are commonly associated with Psoriatic JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatSymptomsAreCommonlyAssociatedWithPsoriaticJIA?> ObjectIntersectionOf(ObjectUnionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Psoriasis))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:PsoriaticJIA)))) ObjectSomeValuesFrom(ema:hasTheme jia:SymptomsAndSigns)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatSymptomsAreCommonlyAssociatedWithPsoriaticJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatSymptomsAreCommonlyAssociatedWithSystemicJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatSymptomsAreCommonlyAssociatedWithSystemicJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatSymptomsAreCommonlyAssociatedWithSystemicJIA?> "What symptoms are commonly associated with Systemic JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatSymptomsAreCommonlyAssociatedWithSystemicJIA?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:SymptomsAndSigns) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:SystemicJIA)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatSymptomsAreCommonlyAssociatedWithSystemicJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatVaccinesCanITakeWhileTakingBiologics?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatVaccinesCanITakeWhileTakingBiologics?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatVaccinesCanITakeWhileTakingBiologics?> "What vaccines can I take while taking biologics?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatVaccinesCanITakeWhileTakingBiologics?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectSomeValuesFrom(ema:hasTheme jia:Immunizations))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:BiologicAgents-All))) ObjectHasValue(ema:hasTheme jia:UseTreatment)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatVaccinesCanITakeWhileTakingBiologics?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhatVaccinesCanITakeWhileTakingMethotrexate?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhatVaccinesCanITakeWhileTakingMethotrexate?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhatVaccinesCanITakeWhileTakingMethotrexate?> "What vaccines can I take while taking methotrexate?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatVaccinesCanITakeWhileTakingMethotrexate?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectSomeValuesFrom(ema:hasTheme jia:Immunizations))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Methotrexate))) ObjectHasValue(ema:hasTheme jia:UseTreatment)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhatVaccinesCanITakeWhileTakingMethotrexate?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhenAndHowAreSplintsUsed?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhenAndHowAreSplintsUsed?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhenAndHowAreSplintsUsed?> "When and how are splints used?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenAndHowAreSplintsUsed?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:TreatmentDeliveryMethods) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Splint)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenAndHowAreSplintsUsed?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhenAndHowShouldIAdministerCorticosteroids?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhenAndHowShouldIAdministerCorticosteroids?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhenAndHowShouldIAdministerCorticosteroids?> "When and how should I administer Corticosteroids?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenAndHowShouldIAdministerCorticosteroids?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:TreatmentDeliveryMethods) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectSomeValuesFrom(ema:hasTheme jia:Corticosteroids)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenAndHowShouldIAdministerCorticosteroids?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhenAndHowShouldIAdministerDMARDs?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhenAndHowShouldIAdministerDMARDs?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhenAndHowShouldIAdministerDMARDs?> "When and how should I administer DMARDs?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenAndHowShouldIAdministerDMARDs?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:TreatmentDeliveryMethods) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectSomeValuesFrom(ema:hasTheme jia:DMARDs)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenAndHowShouldIAdministerDMARDs?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhenAndHowShouldIAdministerMethotrexate?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhenAndHowShouldIAdministerMethotrexate?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhenAndHowShouldIAdministerMethotrexate?> "When and how should I administer methotrexate?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenAndHowShouldIAdministerMethotrexate?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:TreatmentDeliveryMethods) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Methotrexate)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenAndHowShouldIAdministerMethotrexate?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhenAndHowShouldIAdministerNSAIDs?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhenAndHowShouldIAdministerNSAIDs?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhenAndHowShouldIAdministerNSAIDs?> "When and how should I administer NSAIDs?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenAndHowShouldIAdministerNSAIDs?> ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasTheme jia:TreatmentDeliveryMethods) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectSomeValuesFrom(ema:hasTheme jia:NSAIDs)))))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenAndHowShouldIAdministerNSAIDs?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhenCanIResumeUsingHeatOrIce?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhenCanIResumeUsingHeatOrIce?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhenCanIResumeUsingHeatOrIce?> "When can I resume using heat or ice after treatment had to be stopped?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenCanIResumeUsingHeatOrIce?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectUnionOf(ObjectHasValue(ema:hasTheme jia:Heat) ObjectHasValue(ema:hasTheme jia:Ice)))) ObjectHasValue(ema:hasTheme jia:ResumeTreatment)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenCanIResumeUsingHeatOrIce?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIConsiderUsingBiologicAgents?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIConsiderUsingBiologicAgents?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIConsiderUsingBiologicAgents?> "When should I consider using Biologic Agents?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIConsiderUsingBiologicAgents?> ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:BiologicAgents-All) ObjectHasValue(ema:hasTheme jia:UseTreatment)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIConsiderUsingBiologicAgents?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIConsiderUsingDMARDs?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIConsiderUsingDMARDs?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIConsiderUsingDMARDs?> "When should I consider using DMARDs?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIConsiderUsingDMARDs?> ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:DMARDs-All) ObjectHasValue(ema:hasTheme jia:UseTreatment)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIConsiderUsingDMARDs?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIConsiderUsingJointInjections?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIConsiderUsingJointInjections?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIConsiderUsingJointInjections?> "When should I consider using joint injections?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIConsiderUsingJointInjections?> ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:JointInjection) ObjectHasValue(ema:hasTheme jia:UseTreatment)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIConsiderUsingJointInjections?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIConsiderUsingNSAIDs?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIConsiderUsingNSAIDs?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIConsiderUsingNSAIDs?> "When should I consider using NSAIDs?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIConsiderUsingNSAIDs?> ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:NSAIDs-All) ObjectHasValue(ema:hasTheme jia:UseTreatment)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIConsiderUsingNSAIDs?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIGetMethotrexateBloodWorkDone?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIGetMethotrexateBloodWorkDone?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIGetMethotrexateBloodWorkDone?> "When should I get methotrexate blood work done?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIGetMethotrexateBloodWorkDone?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:BloodWork-All))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Methotrexate))) ObjectHasValue(ema:hasTheme jia:TakeTest)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIGetMethotrexateBloodWorkDone?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIStopUsingHeat?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIStopUsingHeat?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIStopUsingHeat?> "When should I stop using heat?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIStopUsingHeat?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Heat))) ObjectHasValue(ema:hasTheme jia:StopTheTreatment)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIStopUsingHeat?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIStopUsingIce?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIStopUsingIce?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIStopUsingIce?> "When should I stop using ice?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIStopUsingIce?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Ice))) ObjectHasValue(ema:hasTheme jia:StopTheTreatment)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIStopUsingIce?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIStopUsingMethotrexate?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIStopUsingMethotrexate?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIStopUsingMethotrexate?> "When should I stop using methotrexate?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIStopUsingMethotrexate?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Methotrexate))) ObjectHasValue(ema:hasTheme jia:StopTheTreatment)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIStopUsingMethotrexate?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIUseHeat?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIUseHeat?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIUseHeat?> "When should I use heat?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIUseHeat?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Heat))) ObjectHasValue(ema:hasTheme jia:UseTreatment)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIUseHeat?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIUseIce?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIUseIce?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIUseIce?> "When should I use ice?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIUseIce?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Ice))) ObjectHasValue(ema:hasTheme jia:UseTreatment)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIUseIce?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIconsiderusingCorticosteroids?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIconsiderusingCorticosteroids?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIconsiderusingCorticosteroids?> "When should I consider using Corticosteroids?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIconsiderusingCorticosteroids?> ObjectIntersectionOf(ObjectHasValue(ema:hasTheme jia:Corticosteroids-All) ObjectHasValue(ema:hasTheme jia:UseTreatment)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldIconsiderusingCorticosteroids?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldTheDifferentJIAMedicationsBeUsed?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldTheDifferentJIAMedicationsBeUsed?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldTheDifferentJIAMedicationsBeUsed?> "When should the different JIA medications be used?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldTheDifferentJIAMedicationsBeUsed?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectSomeValuesFrom(ema:hasTheme jia:Medications))) ObjectHasValue(ema:hasTheme jia:UseTreatment)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhenShouldTheDifferentJIAMedicationsBeUsed?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhereCanILearnMoreAboutJIA?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhereCanILearnMoreAboutJIA?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhereCanILearnMoreAboutJIA?> "Where can I learn more about JIA?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhereCanILearnMoreAboutJIA?> ObjectHasValue(ema:hasTheme jia:ExternalSource))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhereCanILearnMoreAboutJIA?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhyDoChildrenWithJIANeedToHaveTheirEyesChecked?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhyDoChildrenWithJIANeedToHaveTheirEyesChecked?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhyDoChildrenWithJIANeedToHaveTheirEyesChecked?> "Why do children with JIA need to have their eyes checked?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhyDoChildrenWithJIANeedToHaveTheirEyesChecked?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:EyeExam))) ObjectSomeValuesFrom(jia:isElementOf ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Uveitis))) ObjectHasValue(ema:hasTheme jia:TakeTest)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhyDoChildrenWithJIANeedToHaveTheirEyesChecked?> ema:Query)
+
+# Class: <http://niche.cs.dal.ca/EMA_JIA.owl#WhyIsBloodWorkNeededWhenTakingMethotrexate?> (<http://niche.cs.dal.ca/EMA_JIA.owl#WhyIsBloodWorkNeededWhenTakingMethotrexate?>)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA_JIA.owl#WhyIsBloodWorkNeededWhenTakingMethotrexate?> "Why is blood work needed when taking methotrexate?")
+EquivalentClasses(<http://niche.cs.dal.ca/EMA_JIA.owl#WhyIsBloodWorkNeededWhenTakingMethotrexate?> ObjectIntersectionOf(ObjectSomeValuesFrom(jia:isElementOf ObjectIntersectionOf(ObjectSomeValuesFrom(ema:hasElement ObjectSomeValuesFrom(ema:hasTheme jia:SideEffects)) ObjectSomeValuesFrom(ema:hasElement ObjectHasValue(ema:hasTheme jia:Methotrexate)))) ObjectHasValue(ema:hasTheme jia:BloodWork-All)))
+SubClassOf(<http://niche.cs.dal.ca/EMA_JIA.owl#WhyIsBloodWorkNeededWhenTakingMethotrexate?> ema:Query)
+
+
+
+)

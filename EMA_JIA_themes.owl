@@ -1,0 +1,2315 @@
+Prefix(:=<http://niche.cs.dal.ca/EMA_JIA_themes.owl#>)
+Prefix(jia:=<http://niche.cs.dal.ca/EMA_JIA.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://niche.cs.dal.ca/EMA_JIA_themes.owl>
+
+Declaration(Class(<http://niche.cs.dal.ca/EMA.owl#Fact>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA.owl#Recommendation>))
+Declaration(Class(<http://niche.cs.dal.ca/EMA.owl#Theme>))
+Declaration(Class(jia:ActiveImmunizations))
+Declaration(Class(jia:AgeOfChildWithJIA))
+Declaration(Class(jia:Arthritis))
+Declaration(Class(jia:BehaviouralAndEnvironmentalFactors))
+Declaration(Class(jia:BiologicAgents))
+Declaration(Class(jia:BloodTests))
+Declaration(Class(jia:BodyParts))
+Declaration(Class(jia:Corticosteroids))
+Declaration(Class(jia:DMARDs))
+Declaration(Class(jia:Effectiveness))
+Declaration(Class(jia:Events))
+Declaration(Class(jia:FactsAndFigures))
+Declaration(Class(jia:GrowthRelated))
+Declaration(Class(jia:HeredityRelated))
+Declaration(Class(jia:Immunizations))
+Declaration(Class(jia:InactivatedImmunizations))
+Declaration(Class(jia:InfectiousRelated))
+Declaration(Class(jia:JIA))
+Declaration(Class(jia:JIASubtype))
+Declaration(Class(jia:Joints))
+Declaration(Class(jia:LargeJoints))
+Declaration(Class(jia:Likelihood))
+Declaration(Class(jia:MedicalConditions))
+Declaration(Class(jia:MedicalProceedures))
+Declaration(Class(jia:MedicalTests))
+Declaration(Class(jia:Medications))
+Declaration(Class(jia:NSAIDs))
+Declaration(Class(jia:NonMedicinalTreatments))
+Declaration(Class(jia:Outcomes))
+Declaration(Class(jia:PhysicalTherapyAndExercise))
+Declaration(Class(jia:RolesAndJobs))
+Declaration(Class(jia:SexOfChildWithJIA))
+Declaration(Class(jia:SideEffects))
+Declaration(Class(jia:SmallJoints))
+Declaration(Class(jia:StatusOfMedicalCondition))
+Declaration(Class(jia:SymptomsAndSigns))
+Declaration(Class(jia:TreatmentDeliveryMethods))
+Declaration(Class(jia:Treatments))
+Declaration(Class(jia:ValuesAndPreferences))
+Declaration(NamedIndividual(jia:ANABloodTest))
+Declaration(NamedIndividual(jia:ANAPositive))
+Declaration(NamedIndividual(jia:AbnormalGrowth))
+Declaration(NamedIndividual(jia:AbnormalTestResults))
+Declaration(NamedIndividual(jia:Active))
+Declaration(NamedIndividual(jia:ActiveJoint))
+Declaration(NamedIndividual(jia:ActiveJointCount))
+Declaration(NamedIndividual(jia:ActiveJointCountFiveOrMore))
+Declaration(NamedIndividual(jia:ActiveJointCountLessThan4))
+Declaration(NamedIndividual(jia:Adult))
+Declaration(NamedIndividual(jia:AdverseReaction))
+Declaration(NamedIndividual(jia:AfterBeingInjured))
+Declaration(NamedIndividual(jia:AfterPlayingSports))
+Declaration(NamedIndividual(jia:AggressiveTreatmentPlan))
+Declaration(NamedIndividual(jia:AllergicReaction))
+Declaration(NamedIndividual(jia:AlternativeTherapies))
+Declaration(NamedIndividual(jia:Anemia))
+Declaration(NamedIndividual(jia:AnesthesiaDifficulty))
+Declaration(NamedIndividual(jia:Anesthetist))
+Declaration(NamedIndividual(jia:Ankle))
+Declaration(NamedIndividual(jia:Anti-TNFAgent))
+Declaration(NamedIndividual(jia:AnyAge))
+Declaration(NamedIndividual(jia:Application-Other))
+Declaration(NamedIndividual(jia:Arthritis-All))
+Declaration(NamedIndividual(jia:Aspirin))
+Declaration(NamedIndividual(jia:AutoimmuneDisease))
+Declaration(NamedIndividual(jia:AvoidBehaviour))
+Declaration(NamedIndividual(jia:BCGVaccine))
+Declaration(NamedIndividual(jia:BandKeratopathy))
+Declaration(NamedIndividual(jia:BecomeWeak))
+Declaration(NamedIndividual(jia:BedRest))
+Declaration(NamedIndividual(jia:BiologicAgents-All))
+Declaration(NamedIndividual(jia:BirthControl))
+Declaration(NamedIndividual(jia:BirthControlPill))
+Declaration(NamedIndividual(jia:Blindness))
+Declaration(NamedIndividual(jia:BloodWork-All))
+Declaration(NamedIndividual(jia:Bone))
+Declaration(NamedIndividual(jia:Bowel))
+Declaration(NamedIndividual(jia:BreastFeeding))
+Declaration(NamedIndividual(jia:CallTheRheumatologyClinic))
+Declaration(NamedIndividual(jia:CallYourGP))
+Declaration(NamedIndividual(jia:Cancer))
+Declaration(NamedIndividual(jia:Cartilage))
+Declaration(NamedIndividual(jia:Cataract))
+Declaration(NamedIndividual(jia:Cause))
+Declaration(NamedIndividual(jia:Chance))
+Declaration(NamedIndividual(jia:Change))
+Declaration(NamedIndividual(jia:ChangeRoutineSchedule))
+Declaration(NamedIndividual(jia:Chickenpox))
+Declaration(NamedIndividual(jia:ChickenpoxVaccine))
+Declaration(NamedIndividual(jia:Climate))
+Declaration(NamedIndividual(jia:Complications))
+Declaration(NamedIndividual(jia:ConsultInfectiousDiseaseSpecialist))
+Declaration(NamedIndividual(jia:ContactDetails))
+Declaration(NamedIndividual(jia:ContactWithASickPerson))
+Declaration(NamedIndividual(jia:Corticosteroids-All))
+Declaration(NamedIndividual(jia:Cortisone))
+Declaration(NamedIndividual(jia:Cytokine))
+Declaration(NamedIndividual(jia:DMARDs-All))
+Declaration(NamedIndividual(jia:Dactylitis))
+Declaration(NamedIndividual(jia:Damage))
+Declaration(NamedIndividual(jia:Definition))
+Declaration(NamedIndividual(jia:Deformity))
+Declaration(NamedIndividual(jia:DentalDifficulty))
+Declaration(NamedIndividual(jia:Dentist))
+Declaration(NamedIndividual(jia:DevelopCondition))
+Declaration(NamedIndividual(jia:DevelopState))
+Declaration(NamedIndividual(jia:DevelopSymptom))
+Declaration(NamedIndividual(jia:DiabetesType1))
+Declaration(NamedIndividual(jia:Diagnose))
+Declaration(NamedIndividual(jia:Diet))
+Declaration(NamedIndividual(jia:DifficultyChewing))
+Declaration(NamedIndividual(jia:DiptheriaVaccine))
+Declaration(NamedIndividual(jia:DiscontinuingTreatment))
+Declaration(NamedIndividual(jia:DoNotTakeTest))
+Declaration(NamedIndividual(jia:DoNotUseTreatment))
+Declaration(NamedIndividual(jia:Dosage))
+Declaration(NamedIndividual(jia:DrinkingAlcohol))
+Declaration(NamedIndividual(jia:DrugReaction))
+Declaration(NamedIndividual(jia:DryCough))
+Declaration(NamedIndividual(jia:Duration))
+Declaration(NamedIndividual(jia:EarlyStage))
+Declaration(NamedIndividual(jia:Elbow))
+Declaration(NamedIndividual(jia:Entheses))
+Declaration(NamedIndividual(jia:Enthesitis-relatedJIA))
+Declaration(NamedIndividual(jia:ExposureToContagion))
+Declaration(NamedIndividual(jia:Extend))
+Declaration(NamedIndividual(jia:ExternalSource))
+Declaration(NamedIndividual(jia:EyeDrops))
+Declaration(NamedIndividual(jia:EyeExam))
+Declaration(NamedIndividual(jia:EyeInjection))
+Declaration(NamedIndividual(jia:Eyes))
+Declaration(NamedIndividual(jia:FamilyHistory))
+Declaration(NamedIndividual(jia:FamilyMember))
+Declaration(NamedIndividual(jia:FastGrowth))
+Declaration(NamedIndividual(jia:Fatigue))
+Declaration(NamedIndividual(jia:FeelingConcerned))
+Declaration(NamedIndividual(jia:FeelingTired))
+Declaration(NamedIndividual(jia:FeelingUncomfortable))
+Declaration(NamedIndividual(jia:FeelingUnsure))
+Declaration(NamedIndividual(jia:FeelingUnwell))
+Declaration(NamedIndividual(jia:Feet))
+Declaration(NamedIndividual(jia:Female))
+Declaration(NamedIndividual(jia:Fever))
+Declaration(NamedIndividual(jia:FingerNail))
+Declaration(NamedIndividual(jia:Fingers))
+Declaration(NamedIndividual(jia:FirstDiagnosis))
+Declaration(NamedIndividual(jia:FirstFlare))
+Declaration(NamedIndividual(jia:Flare))
+Declaration(NamedIndividual(jia:FluMist))
+Declaration(NamedIndividual(jia:FluVaccine))
+Declaration(NamedIndividual(jia:FolicAcid))
+Declaration(NamedIndividual(jia:GP))
+Declaration(NamedIndividual(jia:Glaucoma))
+Declaration(NamedIndividual(jia:GoodOutlook))
+Declaration(NamedIndividual(jia:HLAB-27Present))
+Declaration(NamedIndividual(jia:HPVVaccine))
+Declaration(NamedIndividual(jia:Hands))
+Declaration(NamedIndividual(jia:HarmUnbornChild))
+Declaration(NamedIndividual(jia:HealthcareTeam))
+Declaration(NamedIndividual(jia:Healthy))
+Declaration(NamedIndividual(jia:HeartFailure))
+Declaration(NamedIndividual(jia:Heat))
+Declaration(NamedIndividual(jia:HepatitisA))
+Declaration(NamedIndividual(jia:HepatitisAVaccine))
+Declaration(NamedIndividual(jia:HepatitisBVaccine))
+Declaration(NamedIndividual(jia:Hereditary))
+Declaration(NamedIndividual(jia:HiBVaccine))
+Declaration(NamedIndividual(jia:HighImpactActivities))
+Declaration(NamedIndividual(jia:HighTestResult))
+Declaration(NamedIndividual(jia:Hips))
+Declaration(NamedIndividual(jia:IBD))
+Declaration(NamedIndividual(jia:IL-1))
+Declaration(NamedIndividual(jia:IPVVaccine))
+Declaration(NamedIndividual(jia:Ibuprofen))
+Declaration(NamedIndividual(jia:Ice))
+Declaration(NamedIndividual(jia:Illness-General))
+Declaration(NamedIndividual(jia:ImbalancedImmuneSystem))
+Declaration(NamedIndividual(jia:Immunosuppression))
+Declaration(NamedIndividual(jia:ImproveSymptoms))
+Declaration(NamedIndividual(jia:InactiveDisease))
+Declaration(NamedIndividual(jia:InactiveVaccine-All))
+Declaration(NamedIndividual(jia:IncreasedRisk))
+Declaration(NamedIndividual(jia:Indomethacin))
+Declaration(NamedIndividual(jia:Infection))
+Declaration(NamedIndividual(jia:Infectious))
+Declaration(NamedIndividual(jia:Inflammation))
+Declaration(NamedIndividual(jia:Injection))
+Declaration(NamedIndividual(jia:InterestedIn))
+Declaration(NamedIndividual(jia:InternalOrgans))
+Declaration(NamedIndividual(jia:ItIsSafe))
+Declaration(NamedIndividual(jia:JapaneseEncephalitisVaccine))
+Declaration(NamedIndividual(jia:Jaw))
+Declaration(NamedIndividual(jia:JointInjection))
+Declaration(NamedIndividual(jia:Joints-All))
+Declaration(NamedIndividual(jia:JuvenileIdiopathicArthritis))
+Declaration(NamedIndividual(jia:Knee))
+Declaration(NamedIndividual(jia:LargeJoints-All))
+Declaration(NamedIndividual(jia:LessActive))
+Declaration(NamedIndividual(jia:LessSevere))
+Declaration(NamedIndividual(jia:LimitAbility))
+Declaration(NamedIndividual(jia:LiquidForm))
+Declaration(NamedIndividual(jia:LiveVaccine))
+Declaration(NamedIndividual(jia:LiverDamage))
+Declaration(NamedIndividual(jia:LiverEnzymeASTorALTTest))
+Declaration(NamedIndividual(jia:LocalAnesthetic))
+Declaration(NamedIndividual(jia:LoseWeight))
+Declaration(NamedIndividual(jia:LowImpactActivities))
+Declaration(NamedIndividual(jia:LowTestResult))
+Declaration(NamedIndividual(jia:Lupus))
+Declaration(NamedIndividual(jia:MMRVaccine))
+Declaration(NamedIndividual(jia:Male))
+Declaration(NamedIndividual(jia:Malnutrition))
+Declaration(NamedIndividual(jia:Measles))
+Declaration(NamedIndividual(jia:Medications-All))
+Declaration(NamedIndividual(jia:MeningococcusVaccine))
+Declaration(NamedIndividual(jia:Methotrexate))
+Declaration(NamedIndividual(jia:Mild))
+Declaration(NamedIndividual(jia:MissedDose))
+Declaration(NamedIndividual(jia:Monitor))
+Declaration(NamedIndividual(jia:MouthSores))
+Declaration(NamedIndividual(jia:MuscleSpasm))
+Declaration(NamedIndividual(jia:NSAIDs-All))
+Declaration(NamedIndividual(jia:Naproxen))
+Declaration(NamedIndividual(jia:Nausea))
+Declaration(NamedIndividual(jia:Neck))
+Declaration(NamedIndividual(jia:NegativeOrPoorEffect))
+Declaration(NamedIndividual(jia:NeurologicalDiseases))
+Declaration(NamedIndividual(jia:NewMedication))
+Declaration(NamedIndividual(jia:NoPlansToStopTreatment))
+Declaration(NamedIndividual(jia:NormalGrowth))
+Declaration(NamedIndividual(jia:NormalHealth))
+Declaration(NamedIndividual(jia:NormalParticipation))
+Declaration(NamedIndividual(jia:NormalTestResults))
+Declaration(NamedIndividual(jia:NotAddictive))
+Declaration(NamedIndividual(jia:NotCause))
+Declaration(NamedIndividual(jia:NotExtend))
+Declaration(NamedIndividual(jia:NotHereditary))
+Declaration(NamedIndividual(jia:NotInfectious))
+Declaration(NamedIndividual(jia:NotTooHot))
+Declaration(NamedIndividual(jia:NotUnderControl))
+Declaration(NamedIndividual(jia:Numbness))
+Declaration(NamedIndividual(jia:OccupationalTherapist))
+Declaration(NamedIndividual(jia:OligoarticularJIA))
+Declaration(NamedIndividual(jia:Opthamologist))
+Declaration(NamedIndividual(jia:Optometrist))
+Declaration(NamedIndividual(jia:OralCorticosteroid))
+Declaration(NamedIndividual(jia:Orthodontist))
+Declaration(NamedIndividual(jia:Orthotics))
+Declaration(NamedIndividual(jia:Pain))
+Declaration(NamedIndividual(jia:Painless))
+Declaration(NamedIndividual(jia:Parent))
+Declaration(NamedIndividual(jia:PediatricRheumatologyClinic))
+Declaration(NamedIndividual(jia:PhysicalActivity))
+Declaration(NamedIndividual(jia:PhysicianGlobalAssessment))
+Declaration(NamedIndividual(jia:Physiotherapist))
+Declaration(NamedIndividual(jia:PinkSkin))
+Declaration(NamedIndividual(jia:PittingOrRidging))
+Declaration(NamedIndividual(jia:PneumococcusVaccine))
+Declaration(NamedIndividual(jia:PolyarticularJIA))
+Declaration(NamedIndividual(jia:PoorAppetite))
+Declaration(NamedIndividual(jia:PositiveEffect))
+Declaration(NamedIndividual(jia:Pre-TeenYears))
+Declaration(NamedIndividual(jia:Predictable))
+Declaration(NamedIndividual(jia:Preference))
+Declaration(NamedIndividual(jia:Pregnancy))
+Declaration(NamedIndividual(jia:ProvideInstruction))
+Declaration(NamedIndividual(jia:ProvidePhysicalSupport))
+Declaration(NamedIndividual(jia:ProvidePrognosis))
+Declaration(NamedIndividual(jia:Psoriasis))
+Declaration(NamedIndividual(jia:PsoriaticJIA))
+Declaration(NamedIndividual(jia:Pupil))
+Declaration(NamedIndividual(jia:RFNegative))
+Declaration(NamedIndividual(jia:RFPositive))
+Declaration(NamedIndividual(jia:RabiesVaccine))
+Declaration(NamedIndividual(jia:RangeOfMotion))
+Declaration(NamedIndividual(jia:Rash))
+Declaration(NamedIndividual(jia:ReceivingOngoingTreatment))
+Declaration(NamedIndividual(jia:ReduceTreatment))
+Declaration(NamedIndividual(jia:RegularSchedule))
+Declaration(NamedIndividual(jia:Remission))
+Declaration(NamedIndividual(jia:RestOrLowActivity))
+Declaration(NamedIndividual(jia:ResumeTreatment))
+Declaration(NamedIndividual(jia:RheumatoidNodules))
+Declaration(NamedIndividual(jia:Rheumatologist))
+Declaration(NamedIndividual(jia:Risk))
+Declaration(NamedIndividual(jia:RotavirusVaccine))
+Declaration(NamedIndividual(jia:RoutineSchedule))
+Declaration(NamedIndividual(jia:SacroilliacJoint))
+Declaration(NamedIndividual(jia:ScarTissue))
+Declaration(NamedIndividual(jia:SchoolOrWorkDay))
+Declaration(NamedIndividual(jia:SeeYourDoctor))
+Declaration(NamedIndividual(jia:SeriousLungProblem))
+Declaration(NamedIndividual(jia:Severe))
+Declaration(NamedIndividual(jia:SexuallyActive))
+Declaration(NamedIndividual(jia:Shivering))
+Declaration(NamedIndividual(jia:ShortnessOfBreath))
+Declaration(NamedIndividual(jia:SideEffectsGeneral))
+Declaration(NamedIndividual(jia:SkinBecomesBrightRed))
+Declaration(NamedIndividual(jia:SkinBecomesPale))
+Declaration(NamedIndividual(jia:SkinConditions))
+Declaration(NamedIndividual(jia:SkinReturnsToNormal))
+Declaration(NamedIndividual(jia:SlowGrowth))
+Declaration(NamedIndividual(jia:SmallChin))
+Declaration(NamedIndividual(jia:SmallJoints-All))
+Declaration(NamedIndividual(jia:SpikingFever))
+Declaration(NamedIndividual(jia:Spine))
+Declaration(NamedIndividual(jia:Splint))
+Declaration(NamedIndividual(jia:StartOfSymptom))
+Declaration(NamedIndividual(jia:StartingTreatment))
+Declaration(NamedIndividual(jia:StayingStill))
+Declaration(NamedIndividual(jia:SterileConditions))
+Declaration(NamedIndividual(jia:SteroidEyeDrops))
+Declaration(NamedIndividual(jia:Stiffness))
+Declaration(NamedIndividual(jia:Sting))
+Declaration(NamedIndividual(jia:StopTheTreatment))
+Declaration(NamedIndividual(jia:StorageTips))
+Declaration(NamedIndividual(jia:Stretch))
+Declaration(NamedIndividual(jia:SulfaAntibiotics))
+Declaration(NamedIndividual(jia:Surgery))
+Declaration(NamedIndividual(jia:SymetricalActiveJoints))
+Declaration(NamedIndividual(jia:Symptomless))
+Declaration(NamedIndividual(jia:Synovium))
+Declaration(NamedIndividual(jia:SystemicJIA))
+Declaration(NamedIndividual(jia:TDAPVaccine))
+Declaration(NamedIndividual(jia:TNF))
+Declaration(NamedIndividual(jia:TableOrGraphic))
+Declaration(NamedIndividual(jia:TabletOrPill))
+Declaration(NamedIndividual(jia:TakeTest))
+Declaration(NamedIndividual(jia:TalkToYourDoctor))
+Declaration(NamedIndividual(jia:TeenageYears))
+Declaration(NamedIndividual(jia:Tendons))
+Declaration(NamedIndividual(jia:TetanusVaccine))
+Declaration(NamedIndividual(jia:TherapyExcercises))
+Declaration(NamedIndividual(jia:ThinkingAboutBecomingSexuallyActive))
+Declaration(NamedIndividual(jia:ThinkingAboutGettingPregnant))
+Declaration(NamedIndividual(jia:ThyroidDisease))
+Declaration(NamedIndividual(jia:Toes))
+Declaration(NamedIndividual(jia:TreatmentReduced))
+Declaration(NamedIndividual(jia:TreatmentStopped))
+Declaration(NamedIndividual(jia:TreatmentToPreventInfection))
+Declaration(NamedIndividual(jia:Treatments-All))
+Declaration(NamedIndividual(jia:TuberculosisTest))
+Declaration(NamedIndividual(jia:TyphoidVaccine-Injection))
+Declaration(NamedIndividual(jia:TyphoidVaccine-Oral))
+Declaration(NamedIndividual(jia:UnderControl))
+Declaration(NamedIndividual(jia:Undetected))
+Declaration(NamedIndividual(jia:Unpredictable))
+Declaration(NamedIndividual(jia:Untreated))
+Declaration(NamedIndividual(jia:UpToDate))
+Declaration(NamedIndividual(jia:UrineTest))
+Declaration(NamedIndividual(jia:UseTreatment))
+Declaration(NamedIndividual(jia:Uveitis))
+Declaration(NamedIndividual(jia:Vaccine-All))
+Declaration(NamedIndividual(jia:VisionLoss))
+Declaration(NamedIndividual(jia:WBCCount))
+Declaration(NamedIndividual(jia:Wait))
+Declaration(NamedIndividual(jia:WantToStopTreatment))
+Declaration(NamedIndividual(jia:WashHands))
+Declaration(NamedIndividual(jia:WhenSleeping))
+Declaration(NamedIndividual(jia:WhenWakingUp))
+Declaration(NamedIndividual(jia:WillBeTravelling))
+Declaration(NamedIndividual(jia:WorsenSymptoms))
+Declaration(NamedIndividual(jia:Wrist))
+Declaration(NamedIndividual(jia:XRay))
+Declaration(NamedIndividual(jia:YellowFeverVaccine))
+Declaration(NamedIndividual(jia:Young))
+Declaration(NamedIndividual(<http://niche.cs.dal.ca/EMA_JIA.owl#16OrYounger>))
+Declaration(NamedIndividual(<http://niche.cs.dal.ca/EMA_JIA.owl#2-4YearsOld>))
+Declaration(NamedIndividual(<http://niche.cs.dal.ca/EMA_JIA.owl#4OrYounger>))
+Declaration(NamedIndividual(<http://niche.cs.dal.ca/EMA_JIA.owl#6-12YearsOld>))
+Declaration(NamedIndividual(<http://niche.cs.dal.ca/EMA_JIA.owl#ActiveJointCount=0>))
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://niche.cs.dal.ca/EMA.owl#Fact> (Fact)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA.owl#Fact> "represents factors that describe the situation described by the argument")
+AnnotationAssertion(rdfs:label <http://niche.cs.dal.ca/EMA.owl#Fact> "Fact")
+SubClassOf(<http://niche.cs.dal.ca/EMA.owl#Fact> <http://niche.cs.dal.ca/EMA.owl#Theme>)
+
+# Class: <http://niche.cs.dal.ca/EMA.owl#Recommendation> (Recommendation)
+
+AnnotationAssertion(rdfs:comment <http://niche.cs.dal.ca/EMA.owl#Recommendation> "represents a course of action suggested by the argument")
+AnnotationAssertion(rdfs:label <http://niche.cs.dal.ca/EMA.owl#Recommendation> "Recommendation")
+SubClassOf(<http://niche.cs.dal.ca/EMA.owl#Recommendation> <http://niche.cs.dal.ca/EMA.owl#Theme>)
+
+# Class: jia:ActiveImmunizations (Active immunizations)
+
+AnnotationAssertion(rdfs:comment jia:ActiveImmunizations "represents those immunizations that contain live bacteria or viruses that are described in the argument")
+AnnotationAssertion(rdfs:label jia:ActiveImmunizations "Active immunizations")
+SubClassOf(jia:ActiveImmunizations jia:Immunizations)
+
+# Class: jia:AgeOfChildWithJIA (Age of child with JIA)
+
+AnnotationAssertion(rdfs:comment jia:AgeOfChildWithJIA "represents the medically relevant age of people described in the argument")
+AnnotationAssertion(rdfs:label jia:AgeOfChildWithJIA "Age of child with JIA")
+SubClassOf(jia:AgeOfChildWithJIA <http://niche.cs.dal.ca/EMA.owl#Fact>)
+
+# Class: jia:Arthritis (Arthritis)
+
+AnnotationAssertion(rdfs:label jia:Arthritis "Arthritis")
+SubClassOf(jia:Arthritis jia:MedicalConditions)
+
+# Class: jia:BehaviouralAndEnvironmentalFactors (Behavioural and environmental factors)
+
+AnnotationAssertion(rdfs:comment jia:BehaviouralAndEnvironmentalFactors "represents the medically relevant actions of people describe in the argument")
+AnnotationAssertion(rdfs:label jia:BehaviouralAndEnvironmentalFactors "Behavioural and environmental factors")
+SubClassOf(jia:BehaviouralAndEnvironmentalFactors <http://niche.cs.dal.ca/EMA.owl#Fact>)
+
+# Class: jia:BiologicAgents (Biologic agents)
+
+AnnotationAssertion(rdfs:comment jia:BiologicAgents "represents phamaceutical drugs created from biological sources described in the argument")
+AnnotationAssertion(rdfs:label jia:BiologicAgents "Biologic agents")
+SubClassOf(jia:BiologicAgents jia:Medications)
+
+# Class: jia:BloodTests (Blood tests)
+
+AnnotationAssertion(rdfs:label jia:BloodTests "Blood tests")
+SubClassOf(jia:BloodTests jia:MedicalTests)
+
+# Class: jia:BodyParts (Body parts)
+
+AnnotationAssertion(rdfs:comment jia:BodyParts "represents descriptions of particular body parts in the argument")
+AnnotationAssertion(rdfs:label jia:BodyParts "Body parts")
+SubClassOf(jia:BodyParts <http://niche.cs.dal.ca/EMA.owl#Fact>)
+
+# Class: jia:Corticosteroids (Corticosteroids)
+
+AnnotationAssertion(rdfs:comment jia:Corticosteroids "represents steroidal drugs described in the argument")
+AnnotationAssertion(rdfs:label jia:Corticosteroids "Corticosteroids")
+SubClassOf(jia:Corticosteroids jia:Medications)
+
+# Class: jia:DMARDs (DMARDs)
+
+AnnotationAssertion(rdfs:comment jia:DMARDs "represents drugs which modify rheumatic disease to slow down disease progression described in an argument")
+AnnotationAssertion(rdfs:label jia:DMARDs "DMARDs")
+SubClassOf(jia:DMARDs jia:Medications)
+
+# Class: jia:Effectiveness (Effectiveness)
+
+AnnotationAssertion(rdfs:comment jia:Effectiveness "describes the result of an intervention")
+AnnotationAssertion(rdfs:label jia:Effectiveness "Effectiveness")
+SubClassOf(jia:Effectiveness jia:Outcomes)
+
+# Class: jia:Events (Events)
+
+AnnotationAssertion(rdfs:comment jia:Events "represents an occurance with a fixed time point")
+AnnotationAssertion(rdfs:label jia:Events "Events")
+SubClassOf(jia:Events <http://niche.cs.dal.ca/EMA.owl#Fact>)
+
+# Class: jia:FactsAndFigures (Facts and figures)
+
+AnnotationAssertion(rdfs:label jia:FactsAndFigures "Facts and figures")
+SubClassOf(jia:FactsAndFigures <http://niche.cs.dal.ca/EMA.owl#Fact>)
+
+# Class: jia:GrowthRelated (Growth related outcomes)
+
+AnnotationAssertion(rdfs:label jia:GrowthRelated "Growth related outcomes")
+SubClassOf(jia:GrowthRelated jia:Outcomes)
+
+# Class: jia:HeredityRelated (Heredity related status)
+
+AnnotationAssertion(rdfs:label jia:HeredityRelated "Heredity related status")
+SubClassOf(jia:HeredityRelated jia:StatusOfMedicalCondition)
+
+# Class: jia:Immunizations (Immunizations)
+
+AnnotationAssertion(rdfs:comment jia:Immunizations "represents compounds used to bolster the body's immune response that are described in the argument")
+AnnotationAssertion(rdfs:label jia:Immunizations "Immunizations")
+SubClassOf(jia:Immunizations jia:Medications)
+
+# Class: jia:InactivatedImmunizations (Inactivated immunizations)
+
+AnnotationAssertion(rdfs:comment jia:InactivatedImmunizations "represents those immunizations that do not contain live bacteria or viruses that are described in the argument")
+AnnotationAssertion(rdfs:label jia:InactivatedImmunizations "Inactivated immunizations")
+SubClassOf(jia:InactivatedImmunizations jia:Immunizations)
+
+# Class: jia:InfectiousRelated (Infectious related status)
+
+AnnotationAssertion(rdfs:label jia:InfectiousRelated "Infectious related status")
+SubClassOf(jia:InfectiousRelated jia:StatusOfMedicalCondition)
+
+# Class: jia:JIA (JIA)
+
+AnnotationAssertion(rdfs:comment jia:JIA "represents the description of Juvenile Idiopathic Arthritis in the argument")
+AnnotationAssertion(rdfs:label jia:JIA "JIA")
+SubClassOf(jia:JIA jia:Arthritis)
+
+# Class: jia:JIASubtype (JIA Subtype)
+
+AnnotationAssertion(rdfs:comment jia:JIASubtype "represents the subclasses of JIA")
+AnnotationAssertion(rdfs:label jia:JIASubtype "JIA Subtype")
+SubClassOf(jia:JIASubtype jia:JIA)
+
+# Class: jia:Joints (Joints)
+
+AnnotationAssertion(rdfs:comment jia:Joints "represents a specific joint described in the argument")
+AnnotationAssertion(rdfs:label jia:Joints "Joints")
+SubClassOf(jia:Joints jia:BodyParts)
+
+# Class: jia:LargeJoints (Large joints)
+
+AnnotationAssertion(rdfs:label jia:LargeJoints "Large joints")
+SubClassOf(jia:LargeJoints jia:Joints)
+
+# Class: jia:Likelihood (Likelihood)
+
+AnnotationAssertion(rdfs:comment jia:Likelihood "the quantitative and qualitative descriptions of the odds of something occuring")
+AnnotationAssertion(rdfs:label jia:Likelihood "Likelihood")
+SubClassOf(jia:Likelihood jia:FactsAndFigures)
+
+# Class: jia:MedicalConditions (Medical conditions)
+
+AnnotationAssertion(rdfs:comment jia:MedicalConditions "represents the medical condition(s) described in the argument")
+AnnotationAssertion(rdfs:label jia:MedicalConditions "Medical conditions")
+SubClassOf(jia:MedicalConditions <http://niche.cs.dal.ca/EMA.owl#Fact>)
+
+# Class: jia:MedicalProceedures (Medical procedures)
+
+AnnotationAssertion(rdfs:comment jia:MedicalProceedures "represents a course of action meant as a treatment to a medical condition that are described in the argument")
+AnnotationAssertion(rdfs:label jia:MedicalProceedures "Medical procedures")
+SubClassOf(jia:MedicalProceedures jia:Treatments)
+
+# Class: jia:MedicalTests (Medical tests)
+
+AnnotationAssertion(rdfs:comment jia:MedicalTests "represents a medical examination that aims to determine, measure or diagnose a condition that is described in the argument")
+AnnotationAssertion(rdfs:label jia:MedicalTests "Medical tests")
+SubClassOf(jia:MedicalTests <http://niche.cs.dal.ca/EMA.owl#Fact>)
+
+# Class: jia:Medications (Medications)
+
+AnnotationAssertion(rdfs:comment jia:Medications "represents treatments using medicines described in the argument")
+AnnotationAssertion(rdfs:label jia:Medications "Medications")
+SubClassOf(jia:Medications jia:Treatments)
+
+# Class: jia:NSAIDs (NSAIDs)
+
+AnnotationAssertion(rdfs:comment jia:NSAIDs "represents non-steroidal anti-inflamatory drugs described in the argument")
+AnnotationAssertion(rdfs:label jia:NSAIDs "NSAIDs")
+SubClassOf(jia:NSAIDs jia:Medications)
+
+# Class: jia:NonMedicinalTreatments (Non-medicinal treatments)
+
+AnnotationAssertion(rdfs:comment jia:NonMedicinalTreatments "describes treatments which do not use pharmaceutical grugs described in the argument")
+AnnotationAssertion(rdfs:label jia:NonMedicinalTreatments "Non-medicinal treatments")
+SubClassOf(jia:NonMedicinalTreatments jia:Treatments)
+
+# Class: jia:Outcomes (Outcomes)
+
+AnnotationAssertion(rdfs:comment jia:Outcomes "represents an occurance that happened due to one, or several, factors")
+AnnotationAssertion(rdfs:label jia:Outcomes "Outcomes")
+SubClassOf(jia:Outcomes <http://niche.cs.dal.ca/EMA.owl#Fact>)
+
+# Class: jia:PhysicalTherapyAndExercise (jia:PhysicalTherapyAndExercise)
+
+SubClassOf(jia:PhysicalTherapyAndExercise jia:NonMedicinalTreatments)
+
+# Class: jia:RolesAndJobs (Roles and jobs)
+
+AnnotationAssertion(rdfs:comment jia:RolesAndJobs "represents the actor(s) described in an argument")
+AnnotationAssertion(rdfs:label jia:RolesAndJobs "Roles and jobs")
+SubClassOf(jia:RolesAndJobs <http://niche.cs.dal.ca/EMA.owl#Fact>)
+
+# Class: jia:SexOfChildWithJIA (Sex of child with JIA)
+
+AnnotationAssertion(rdfs:comment jia:SexOfChildWithJIA "represents the medically relevant sex of the people described in an argument")
+AnnotationAssertion(rdfs:label jia:SexOfChildWithJIA "Sex of child with JIA")
+SubClassOf(jia:SexOfChildWithJIA <http://niche.cs.dal.ca/EMA.owl#Fact>)
+
+# Class: jia:SideEffects (Side effects)
+
+AnnotationAssertion(rdfs:comment jia:SideEffects "represents the unitended consequence(s) of a treatment that is described in the argument")
+AnnotationAssertion(rdfs:label jia:SideEffects "Side effects")
+SubClassOf(jia:SideEffects <http://niche.cs.dal.ca/EMA.owl#Fact>)
+
+# Class: jia:SmallJoints (Small joints)
+
+AnnotationAssertion(rdfs:label jia:SmallJoints "Small joints")
+SubClassOf(jia:SmallJoints jia:Joints)
+
+# Class: jia:StatusOfMedicalCondition (Status of medical condition)
+
+AnnotationAssertion(rdfs:comment jia:StatusOfMedicalCondition "represents the status of a condition over a period of time")
+AnnotationAssertion(rdfs:label jia:StatusOfMedicalCondition "Status of medical condition")
+SubClassOf(jia:StatusOfMedicalCondition <http://niche.cs.dal.ca/EMA.owl#Fact>)
+
+# Class: jia:SymptomsAndSigns (Symptoms and signs)
+
+AnnotationAssertion(rdfs:comment jia:SymptomsAndSigns "represents signs (clinician or test determined) or symptoms (patient or family felt or observed)")
+AnnotationAssertion(rdfs:label jia:SymptomsAndSigns "Symptoms and signs")
+SubClassOf(jia:SymptomsAndSigns <http://niche.cs.dal.ca/EMA.owl#Fact>)
+
+# Class: jia:TreatmentDeliveryMethods (Treatment delivery methods)
+
+AnnotationAssertion(rdfs:comment jia:TreatmentDeliveryMethods "represents the ways in which a treatment can or should be administered")
+AnnotationAssertion(rdfs:label jia:TreatmentDeliveryMethods "Treatment delivery methods")
+SubClassOf(jia:TreatmentDeliveryMethods <http://niche.cs.dal.ca/EMA.owl#Recommendation>)
+
+# Class: jia:Treatments (Treatments)
+
+AnnotationAssertion(rdfs:comment jia:Treatments "represents the treatment options described in the argument")
+AnnotationAssertion(rdfs:label jia:Treatments "Treatments")
+SubClassOf(jia:Treatments <http://niche.cs.dal.ca/EMA.owl#Fact>)
+
+# Class: jia:ValuesAndPreferences (Values and preferences)
+
+AnnotationAssertion(rdfs:comment jia:ValuesAndPreferences "represents the thoughts and desires of the patient, caregiver, or family member")
+AnnotationAssertion(rdfs:label jia:ValuesAndPreferences "Values and preferences")
+SubClassOf(jia:ValuesAndPreferences <http://niche.cs.dal.ca/EMA.owl#Fact>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: jia:ANABloodTest (ANA blood test)
+
+AnnotationAssertion(rdfs:label jia:ANABloodTest "ANA blood test")
+ClassAssertion(jia:BloodTests jia:ANABloodTest)
+
+# Individual: jia:ANAPositive (ANA positive)
+
+AnnotationAssertion(rdfs:label jia:ANAPositive "ANA positive")
+ClassAssertion(jia:SymptomsAndSigns jia:ANAPositive)
+
+# Individual: jia:AbnormalGrowth (Abnormal growth)
+
+AnnotationAssertion(rdfs:label jia:AbnormalGrowth "Abnormal growth")
+ClassAssertion(jia:GrowthRelated jia:AbnormalGrowth)
+
+# Individual: jia:AbnormalTestResults (Abnormal test results)
+
+AnnotationAssertion(rdfs:label jia:AbnormalTestResults "Abnormal test results")
+ClassAssertion(jia:Outcomes jia:AbnormalTestResults)
+
+# Individual: jia:Active (Active)
+
+AnnotationAssertion(rdfs:label jia:Active "Active")
+ClassAssertion(jia:StatusOfMedicalCondition jia:Active)
+
+# Individual: jia:ActiveJoint (Active joint)
+
+AnnotationAssertion(rdfs:label jia:ActiveJoint "Active joint")
+ClassAssertion(jia:SymptomsAndSigns jia:ActiveJoint)
+
+# Individual: jia:ActiveJointCount (Active joint count)
+
+AnnotationAssertion(rdfs:label jia:ActiveJointCount "Active joint count")
+ClassAssertion(jia:MedicalTests jia:ActiveJointCount)
+
+# Individual: jia:ActiveJointCountFiveOrMore (Active joint count is 5 or more)
+
+AnnotationAssertion(rdfs:label jia:ActiveJointCountFiveOrMore "Active joint count is 5 or more")
+ClassAssertion(jia:SymptomsAndSigns jia:ActiveJointCountFiveOrMore)
+
+# Individual: jia:ActiveJointCountLessThan4 (Active joint count is 4 or less)
+
+AnnotationAssertion(rdfs:label jia:ActiveJointCountLessThan4 "Active joint count is 4 or less")
+ClassAssertion(jia:SymptomsAndSigns jia:ActiveJointCountLessThan4)
+
+# Individual: jia:Adult (Adult)
+
+AnnotationAssertion(rdfs:label jia:Adult "Adult")
+ClassAssertion(jia:AgeOfChildWithJIA jia:Adult)
+
+# Individual: jia:AdverseReaction (Adverse reaction)
+
+AnnotationAssertion(rdfs:label jia:AdverseReaction "Adverse reaction")
+ClassAssertion(jia:SideEffects jia:AdverseReaction)
+
+# Individual: jia:AfterBeingInjured (After being injured)
+
+AnnotationAssertion(rdfs:label jia:AfterBeingInjured "After being injured")
+ClassAssertion(jia:Events jia:AfterBeingInjured)
+
+# Individual: jia:AfterPlayingSports (After playing sports)
+
+AnnotationAssertion(rdfs:label jia:AfterPlayingSports "After playing sports")
+ClassAssertion(jia:Events jia:AfterPlayingSports)
+
+# Individual: jia:AggressiveTreatmentPlan (Aggressive treatment plan)
+
+AnnotationAssertion(rdfs:label jia:AggressiveTreatmentPlan "Aggressive treatment plan")
+ClassAssertion(<http://niche.cs.dal.ca/EMA.owl#Recommendation> jia:AggressiveTreatmentPlan)
+
+# Individual: jia:AllergicReaction (Allergic reaction)
+
+AnnotationAssertion(rdfs:label jia:AllergicReaction "Allergic reaction")
+ClassAssertion(jia:Outcomes jia:AllergicReaction)
+
+# Individual: jia:AlternativeTherapies (Alternative therapies)
+
+AnnotationAssertion(rdfs:label jia:AlternativeTherapies "Alternative therapies")
+ClassAssertion(jia:NonMedicinalTreatments jia:AlternativeTherapies)
+
+# Individual: jia:Anemia (Anemia)
+
+AnnotationAssertion(rdfs:label jia:Anemia "Anemia")
+ClassAssertion(jia:SymptomsAndSigns jia:Anemia)
+
+# Individual: jia:AnesthesiaDifficulty (Anesthesia difficulty)
+
+AnnotationAssertion(rdfs:label jia:AnesthesiaDifficulty "Anesthesia difficulty")
+ClassAssertion(jia:Outcomes jia:AnesthesiaDifficulty)
+
+# Individual: jia:Anesthetist (Anesthetist)
+
+AnnotationAssertion(rdfs:label jia:Anesthetist "Anesthetist")
+ClassAssertion(jia:RolesAndJobs jia:Anesthetist)
+
+# Individual: jia:Ankle (Ankle)
+
+AnnotationAssertion(rdfs:label jia:Ankle "Ankle")
+ClassAssertion(jia:LargeJoints jia:Ankle)
+
+# Individual: jia:Anti-TNFAgent (Anti-TNF agent)
+
+AnnotationAssertion(rdfs:label jia:Anti-TNFAgent "Anti-TNF agent")
+ClassAssertion(jia:BiologicAgents jia:Anti-TNFAgent)
+
+# Individual: jia:AnyAge (Any age)
+
+AnnotationAssertion(rdfs:label jia:AnyAge "Any age")
+ClassAssertion(jia:AgeOfChildWithJIA jia:AnyAge)
+
+# Individual: jia:Application-Other (Application - other)
+
+AnnotationAssertion(rdfs:comment jia:Application-Other "indicates that the manner in which treatment is carried out is important")
+AnnotationAssertion(rdfs:label jia:Application-Other "Application - other")
+ClassAssertion(jia:TreatmentDeliveryMethods jia:Application-Other)
+
+# Individual: jia:Arthritis-All (Arthritis - All)
+
+AnnotationAssertion(rdfs:label jia:Arthritis-All "Arthritis - All")
+ClassAssertion(jia:Arthritis jia:Arthritis-All)
+
+# Individual: jia:Aspirin (Aspirin)
+
+AnnotationAssertion(rdfs:label jia:Aspirin "Aspirin")
+ClassAssertion(jia:NSAIDs jia:Aspirin)
+
+# Individual: jia:AutoimmuneDisease (Autoimmune diseases - All)
+
+AnnotationAssertion(rdfs:label jia:AutoimmuneDisease "Autoimmune diseases - All")
+ClassAssertion(jia:MedicalConditions jia:AutoimmuneDisease)
+
+# Individual: jia:AvoidBehaviour (Avoid behaviour)
+
+AnnotationAssertion(rdfs:label jia:AvoidBehaviour "Avoid behaviour")
+ClassAssertion(<http://niche.cs.dal.ca/EMA.owl#Recommendation> jia:AvoidBehaviour)
+
+# Individual: jia:BCGVaccine (BCG vaccine)
+
+AnnotationAssertion(rdfs:label jia:BCGVaccine "BCG vaccine")
+ClassAssertion(jia:ActiveImmunizations jia:BCGVaccine)
+
+# Individual: jia:BandKeratopathy (Band keratopathy)
+
+AnnotationAssertion(rdfs:label jia:BandKeratopathy "Band keratopathy")
+ClassAssertion(jia:MedicalConditions jia:BandKeratopathy)
+
+# Individual: jia:BecomeWeak (Become weak)
+
+AnnotationAssertion(rdfs:label jia:BecomeWeak "Become weak")
+ClassAssertion(jia:SymptomsAndSigns jia:BecomeWeak)
+
+# Individual: jia:BedRest (Bed rest)
+
+AnnotationAssertion(rdfs:label jia:BedRest "Bed rest")
+ClassAssertion(jia:PhysicalTherapyAndExercise jia:BedRest)
+
+# Individual: jia:BiologicAgents-All (Biologic agents - All)
+
+AnnotationAssertion(rdfs:label jia:BiologicAgents-All "Biologic agents - All")
+ClassAssertion(jia:BiologicAgents jia:BiologicAgents-All)
+
+# Individual: jia:BirthControl (Birth control - All)
+
+AnnotationAssertion(rdfs:label jia:BirthControl "Birth control - All")
+ClassAssertion(jia:Treatments jia:BirthControl)
+
+# Individual: jia:BirthControlPill (Birth control pill)
+
+AnnotationAssertion(rdfs:label jia:BirthControlPill "Birth control pill")
+ClassAssertion(jia:Medications jia:BirthControlPill)
+
+# Individual: jia:Blindness (Blindness)
+
+AnnotationAssertion(rdfs:label jia:Blindness "Blindness")
+ClassAssertion(jia:Outcomes jia:Blindness)
+
+# Individual: jia:BloodWork-All (Blood work - All)
+
+AnnotationAssertion(rdfs:label jia:BloodWork-All "Blood work - All")
+ClassAssertion(jia:BloodTests jia:BloodWork-All)
+
+# Individual: jia:Bone (Bone)
+
+AnnotationAssertion(rdfs:label jia:Bone "Bone")
+ClassAssertion(jia:BodyParts jia:Bone)
+
+# Individual: jia:Bowel (Bowel)
+
+AnnotationAssertion(rdfs:label jia:Bowel "Bowel")
+ClassAssertion(jia:BodyParts jia:Bowel)
+
+# Individual: jia:BreastFeeding (Breast feeding)
+
+AnnotationAssertion(rdfs:label jia:BreastFeeding "Breast feeding")
+ClassAssertion(jia:BehaviouralAndEnvironmentalFactors jia:BreastFeeding)
+
+# Individual: jia:CallTheRheumatologyClinic (Call the rheumatology clinic)
+
+AnnotationAssertion(rdfs:label jia:CallTheRheumatologyClinic "Call the rheumatology clinic")
+ClassAssertion(<http://niche.cs.dal.ca/EMA.owl#Recommendation> jia:CallTheRheumatologyClinic)
+
+# Individual: jia:CallYourGP (Call your family doctor)
+
+AnnotationAssertion(rdfs:label jia:CallYourGP "Call your family doctor")
+ClassAssertion(<http://niche.cs.dal.ca/EMA.owl#Recommendation> jia:CallYourGP)
+
+# Individual: jia:Cancer (Cancer)
+
+AnnotationAssertion(rdfs:label jia:Cancer "Cancer")
+ClassAssertion(jia:MedicalConditions jia:Cancer)
+
+# Individual: jia:Cartilage (Cartilage)
+
+AnnotationAssertion(rdfs:label jia:Cartilage "Cartilage")
+ClassAssertion(jia:BodyParts jia:Cartilage)
+
+# Individual: jia:Cataract (Cataract)
+
+AnnotationAssertion(rdfs:label jia:Cataract "Cataract")
+ClassAssertion(jia:MedicalConditions jia:Cataract)
+
+# Individual: jia:Cause (Cause)
+
+AnnotationAssertion(rdfs:comment jia:Cause "indicates a causal relationship")
+AnnotationAssertion(rdfs:label jia:Cause "Cause")
+ClassAssertion(jia:Outcomes jia:Cause)
+
+# Individual: jia:Chance (Chance)
+
+AnnotationAssertion(rdfs:comment jia:Chance "the mathematical odds that something will happen - often expressed asa  fraction or percentage")
+AnnotationAssertion(rdfs:label jia:Chance "Chance")
+ClassAssertion(jia:Likelihood jia:Chance)
+
+# Individual: jia:Change (Change)
+
+AnnotationAssertion(rdfs:label jia:Change "Change")
+ClassAssertion(jia:StatusOfMedicalCondition jia:Change)
+
+# Individual: jia:ChangeRoutineSchedule (Change routine schedule)
+
+AnnotationAssertion(rdfs:label jia:ChangeRoutineSchedule "Change routine schedule")
+ClassAssertion(<http://niche.cs.dal.ca/EMA.owl#Recommendation> jia:ChangeRoutineSchedule)
+
+# Individual: jia:Chickenpox (Chickenpox)
+
+AnnotationAssertion(rdfs:label jia:Chickenpox "Chickenpox")
+ClassAssertion(jia:MedicalConditions jia:Chickenpox)
+
+# Individual: jia:ChickenpoxVaccine (Chickenpox vaccine)
+
+AnnotationAssertion(rdfs:label jia:ChickenpoxVaccine "Chickenpox vaccine")
+ClassAssertion(jia:ActiveImmunizations jia:ChickenpoxVaccine)
+
+# Individual: jia:Climate (Climate)
+
+AnnotationAssertion(rdfs:comment jia:Climate "includes the weather of a geographical location - either in an instance or on average")
+AnnotationAssertion(rdfs:label jia:Climate "Climate")
+ClassAssertion(jia:BehaviouralAndEnvironmentalFactors jia:Climate)
+
+# Individual: jia:Complications (Complications)
+
+AnnotationAssertion(rdfs:label jia:Complications "Complications")
+ClassAssertion(jia:Outcomes jia:Complications)
+
+# Individual: jia:ConsultInfectiousDiseaseSpecialist (Consult infectious disease specialist)
+
+AnnotationAssertion(rdfs:label jia:ConsultInfectiousDiseaseSpecialist "Consult infectious disease specialist")
+ClassAssertion(<http://niche.cs.dal.ca/EMA.owl#Recommendation> jia:ConsultInfectiousDiseaseSpecialist)
+
+# Individual: jia:ContactDetails (Contact details)
+
+AnnotationAssertion(rdfs:comment jia:ContactDetails "indicates the method by which communication may be attained with a given party")
+AnnotationAssertion(rdfs:label jia:ContactDetails "Contact details")
+ClassAssertion(jia:FactsAndFigures jia:ContactDetails)
+
+# Individual: jia:ContactWithASickPerson (Contact with a sick person)
+
+AnnotationAssertion(rdfs:comment jia:ContactWithASickPerson "exposure to a person")
+AnnotationAssertion(rdfs:label jia:ContactWithASickPerson "Contact with a sick person")
+ClassAssertion(jia:BehaviouralAndEnvironmentalFactors jia:ContactWithASickPerson)
+
+# Individual: jia:Corticosteroids-All (Corticosteroids - All)
+
+AnnotationAssertion(rdfs:label jia:Corticosteroids-All "Corticosteroids - All")
+ClassAssertion(jia:Corticosteroids jia:Corticosteroids-All)
+
+# Individual: jia:Cortisone (Cortisone)
+
+AnnotationAssertion(rdfs:label jia:Cortisone "Cortisone")
+ClassAssertion(jia:Corticosteroids jia:Cortisone)
+
+# Individual: jia:Cytokine (Cytokine)
+
+AnnotationAssertion(rdfs:label jia:Cytokine "Cytokine")
+ClassAssertion(jia:BodyParts jia:Cytokine)
+
+# Individual: jia:DMARDs-All (DMARDs - All)
+
+AnnotationAssertion(rdfs:label jia:DMARDs-All "DMARDs - All")
+ClassAssertion(jia:DMARDs jia:DMARDs-All)
+
+# Individual: jia:Dactylitis (Dactylitis)
+
+AnnotationAssertion(rdfs:label jia:Dactylitis "Dactylitis")
+ClassAssertion(jia:MedicalConditions jia:Dactylitis)
+
+# Individual: jia:Damage (Damage)
+
+AnnotationAssertion(rdfs:label jia:Damage "Damage")
+ClassAssertion(jia:Outcomes jia:Damage)
+
+# Individual: jia:Definition (Definition)
+
+AnnotationAssertion(rdfs:label jia:Definition "Definition")
+ClassAssertion(jia:FactsAndFigures jia:Definition)
+
+# Individual: jia:Deformity (Deformity)
+
+AnnotationAssertion(rdfs:label jia:Deformity "Deformity")
+ClassAssertion(jia:Outcomes jia:Deformity)
+
+# Individual: jia:DentalDifficulty (Dental difficulty)
+
+AnnotationAssertion(rdfs:label jia:DentalDifficulty "Dental difficulty")
+ClassAssertion(jia:Outcomes jia:DentalDifficulty)
+
+# Individual: jia:Dentist (Dentist)
+
+AnnotationAssertion(rdfs:label jia:Dentist "Dentist")
+ClassAssertion(jia:RolesAndJobs jia:Dentist)
+
+# Individual: jia:DevelopCondition (Develop condition)
+
+AnnotationAssertion(rdfs:comment jia:DevelopCondition "that a certain condition will come to pass as an outcome")
+AnnotationAssertion(rdfs:label jia:DevelopCondition "Develop condition")
+ClassAssertion(jia:Outcomes jia:DevelopCondition)
+
+# Individual: jia:DevelopState (Develop state)
+
+AnnotationAssertion(rdfs:comment jia:DevelopState "that a certain state will come to pass as an outcome")
+AnnotationAssertion(rdfs:label jia:DevelopState "Develop state")
+ClassAssertion(jia:Outcomes jia:DevelopState)
+
+# Individual: jia:DevelopSymptom (Develop symptoms)
+
+AnnotationAssertion(rdfs:label jia:DevelopSymptom "Develop symptoms")
+ClassAssertion(jia:Outcomes jia:DevelopSymptom)
+
+# Individual: jia:DiabetesType1 (Diabetes Type 1)
+
+AnnotationAssertion(rdfs:label jia:DiabetesType1 "Diabetes Type 1")
+ClassAssertion(jia:MedicalConditions jia:DiabetesType1)
+
+# Individual: jia:Diagnose (Diagnose)
+
+AnnotationAssertion(rdfs:comment jia:Diagnose "the action of diagnosing as opposed to the event")
+AnnotationAssertion(rdfs:label jia:Diagnose "Diagnose")
+ClassAssertion(jia:Outcomes jia:Diagnose)
+
+# Individual: jia:Diet (Diet)
+
+AnnotationAssertion(rdfs:label jia:Diet "Diet")
+ClassAssertion(jia:BehaviouralAndEnvironmentalFactors jia:Diet)
+
+# Individual: jia:DifficultyChewing (Difficulty chewing)
+
+AnnotationAssertion(rdfs:label jia:DifficultyChewing "Difficulty chewing")
+ClassAssertion(jia:SymptomsAndSigns jia:DifficultyChewing)
+
+# Individual: jia:DiptheriaVaccine (Diptheria vaccine)
+
+AnnotationAssertion(rdfs:label jia:DiptheriaVaccine "Diptheria vaccine")
+ClassAssertion(jia:InactivatedImmunizations jia:DiptheriaVaccine)
+
+# Individual: jia:DiscontinuingTreatment (Discontinuing treatment)
+
+AnnotationAssertion(rdfs:label jia:DiscontinuingTreatment "Discontinuing treatment")
+ClassAssertion(jia:Outcomes jia:DiscontinuingTreatment)
+
+# Individual: jia:DoNotTakeTest (Do not take test)
+
+AnnotationAssertion(rdfs:label jia:DoNotTakeTest "Do not take test")
+ClassAssertion(<http://niche.cs.dal.ca/EMA.owl#Recommendation> jia:DoNotTakeTest)
+
+# Individual: jia:DoNotUseTreatment (Do not use treatment)
+
+AnnotationAssertion(rdfs:label jia:DoNotUseTreatment "Do not use treatment")
+ClassAssertion(<http://niche.cs.dal.ca/EMA.owl#Recommendation> jia:DoNotUseTreatment)
+
+# Individual: jia:Dosage (Dosage)
+
+AnnotationAssertion(rdfs:comment jia:Dosage "the amount, frequency and/or timings when treatment should be taken")
+AnnotationAssertion(rdfs:label jia:Dosage "Dosage")
+ClassAssertion(jia:TreatmentDeliveryMethods jia:Dosage)
+
+# Individual: jia:DrinkingAlcohol (Drinking alcohol)
+
+AnnotationAssertion(rdfs:label jia:DrinkingAlcohol "Drinking alcohol")
+ClassAssertion(jia:BehaviouralAndEnvironmentalFactors jia:DrinkingAlcohol)
+
+# Individual: jia:DrugReaction (Drug reaction)
+
+AnnotationAssertion(rdfs:label jia:DrugReaction "Drug reaction")
+ClassAssertion(jia:Outcomes jia:DrugReaction)
+
+# Individual: jia:DryCough (Dry cough)
+
+AnnotationAssertion(rdfs:label jia:DryCough "Dry cough")
+ClassAssertion(jia:SideEffects jia:DryCough)
+
+# Individual: jia:Duration (Duration)
+
+AnnotationAssertion(rdfs:label jia:Duration "Duration")
+ClassAssertion(jia:Events jia:Duration)
+
+# Individual: jia:EarlyStage (Early stage)
+
+AnnotationAssertion(rdfs:label jia:EarlyStage "Early stage")
+ClassAssertion(jia:StatusOfMedicalCondition jia:EarlyStage)
+
+# Individual: jia:Elbow (Elbow)
+
+AnnotationAssertion(rdfs:label jia:Elbow "Elbow")
+ClassAssertion(jia:Joints jia:Elbow)
+
+# Individual: jia:Entheses (Entheses)
+
+AnnotationAssertion(rdfs:label jia:Entheses "Entheses")
+ClassAssertion(jia:BodyParts jia:Entheses)
+
+# Individual: jia:Enthesitis-relatedJIA (Enthesitis-related JIA)
+
+AnnotationAssertion(rdfs:label jia:Enthesitis-relatedJIA "Enthesitis-related JIA")
+ClassAssertion(jia:JIASubtype jia:Enthesitis-relatedJIA)
+
+# Individual: jia:ExposureToContagion (Exposure to contagion)
+
+AnnotationAssertion(rdfs:label jia:ExposureToContagion "Exposure to contagion")
+ClassAssertion(jia:Events jia:ExposureToContagion)
+
+# Individual: jia:Extend (Extend)
+
+AnnotationAssertion(rdfs:comment jia:Extend "the spread of inflammation from one part of the body to another")
+AnnotationAssertion(rdfs:label jia:Extend "Extend")
+ClassAssertion(jia:Outcomes jia:Extend)
+
+# Individual: jia:ExternalSource (External source)
+
+AnnotationAssertion(rdfs:label jia:ExternalSource "External source")
+ClassAssertion(<http://niche.cs.dal.ca/EMA.owl#Fact> jia:ExternalSource)
+
+# Individual: jia:EyeDrops (Eye drops)
+
+AnnotationAssertion(rdfs:label jia:EyeDrops "Eye drops")
+ClassAssertion(jia:Medications jia:EyeDrops)
+
+# Individual: jia:EyeExam (Eye exam)
+
+AnnotationAssertion(rdfs:label jia:EyeExam "Eye exam")
+ClassAssertion(jia:MedicalTests jia:EyeExam)
+
+# Individual: jia:EyeInjection (Eye injection)
+
+AnnotationAssertion(rdfs:label jia:EyeInjection "Eye injection")
+ClassAssertion(jia:Corticosteroids jia:EyeInjection)
+
+# Individual: jia:Eyes (Eyes)
+
+AnnotationAssertion(rdfs:label jia:Eyes "Eyes")
+ClassAssertion(jia:BodyParts jia:Eyes)
+
+# Individual: jia:FamilyHistory (Family history)
+
+AnnotationAssertion(rdfs:label jia:FamilyHistory "Family history")
+ClassAssertion(jia:BehaviouralAndEnvironmentalFactors jia:FamilyHistory)
+
+# Individual: jia:FamilyMember (Family member)
+
+AnnotationAssertion(rdfs:label jia:FamilyMember "Family member")
+ClassAssertion(jia:RolesAndJobs jia:FamilyMember)
+
+# Individual: jia:FastGrowth (Fast growth)
+
+AnnotationAssertion(rdfs:label jia:FastGrowth "Fast growth")
+ClassAssertion(jia:GrowthRelated jia:FastGrowth)
+
+# Individual: jia:Fatigue (Fatigue)
+
+AnnotationAssertion(rdfs:label jia:Fatigue "Fatigue")
+ClassAssertion(jia:SideEffects jia:Fatigue)
+
+# Individual: jia:FeelingConcerned (Feeling concerned)
+
+AnnotationAssertion(rdfs:label jia:FeelingConcerned "Feeling concerned")
+ClassAssertion(jia:ValuesAndPreferences jia:FeelingConcerned)
+
+# Individual: jia:FeelingTired (Feeling tired)
+
+AnnotationAssertion(rdfs:label jia:FeelingTired "Feeling tired")
+ClassAssertion(jia:SideEffects jia:FeelingTired)
+
+# Individual: jia:FeelingUncomfortable (Feeling uncomfortable)
+
+AnnotationAssertion(rdfs:label jia:FeelingUncomfortable "Feeling uncomfortable")
+ClassAssertion(jia:SideEffects jia:FeelingUncomfortable)
+
+# Individual: jia:FeelingUnsure (Feeling unsure)
+
+AnnotationAssertion(rdfs:label jia:FeelingUnsure "Feeling unsure")
+ClassAssertion(jia:ValuesAndPreferences jia:FeelingUnsure)
+
+# Individual: jia:FeelingUnwell (Feeling unwell)
+
+AnnotationAssertion(rdfs:label jia:FeelingUnwell "Feeling unwell")
+ClassAssertion(jia:SymptomsAndSigns jia:FeelingUnwell)
+
+# Individual: jia:Feet (Feet)
+
+AnnotationAssertion(rdfs:label jia:Feet "Feet")
+ClassAssertion(jia:SmallJoints jia:Feet)
+
+# Individual: jia:Female (Female)
+
+AnnotationAssertion(rdfs:label jia:Female "Female")
+ClassAssertion(jia:SexOfChildWithJIA jia:Female)
+
+# Individual: jia:Fever (Fever)
+
+AnnotationAssertion(rdfs:label jia:Fever "Fever")
+ClassAssertion(jia:MedicalConditions jia:Fever)
+
+# Individual: jia:FingerNail (Finger nail)
+
+AnnotationAssertion(rdfs:label jia:FingerNail "Finger nail")
+ClassAssertion(jia:BodyParts jia:FingerNail)
+
+# Individual: jia:Fingers (Fingers)
+
+AnnotationAssertion(rdfs:label jia:Fingers "Fingers")
+ClassAssertion(jia:SmallJoints jia:Fingers)
+
+# Individual: jia:FirstDiagnosis (First diagnosis)
+
+AnnotationAssertion(rdfs:label jia:FirstDiagnosis "First diagnosis")
+ClassAssertion(jia:Events jia:FirstDiagnosis)
+
+# Individual: jia:FirstFlare (First flare)
+
+AnnotationAssertion(rdfs:label jia:FirstFlare "First flare")
+ClassAssertion(jia:Events jia:FirstFlare)
+
+# Individual: jia:Flare (Flare)
+
+AnnotationAssertion(rdfs:label jia:Flare "Flare")
+ClassAssertion(jia:Outcomes jia:Flare)
+
+# Individual: jia:FluMist (FluMist)
+
+AnnotationAssertion(rdfs:label jia:FluMist "FluMist")
+ClassAssertion(jia:ActiveImmunizations jia:FluMist)
+
+# Individual: jia:FluVaccine (Flu vaccine)
+
+AnnotationAssertion(rdfs:label jia:FluVaccine "Flu vaccine")
+ClassAssertion(jia:InactivatedImmunizations jia:FluVaccine)
+
+# Individual: jia:FolicAcid (Folic Acid)
+
+AnnotationAssertion(rdfs:label jia:FolicAcid "Folic Acid")
+ClassAssertion(jia:Treatments jia:FolicAcid)
+
+# Individual: jia:GP (Family doctor)
+
+AnnotationAssertion(rdfs:label jia:GP "Family doctor")
+ClassAssertion(jia:RolesAndJobs jia:GP)
+
+# Individual: jia:Glaucoma (Glaucoma)
+
+AnnotationAssertion(rdfs:label jia:Glaucoma "Glaucoma")
+ClassAssertion(jia:MedicalConditions jia:Glaucoma)
+
+# Individual: jia:GoodOutlook (Good outlook)
+
+AnnotationAssertion(rdfs:label jia:GoodOutlook "Good outlook")
+ClassAssertion(jia:Outcomes jia:GoodOutlook)
+
+# Individual: jia:HLAB-27Present (HLAB-27 positive)
+
+AnnotationAssertion(rdfs:label jia:HLAB-27Present "HLAB-27 positive")
+ClassAssertion(jia:SymptomsAndSigns jia:HLAB-27Present)
+
+# Individual: jia:HPVVaccine (HPV vaccine)
+
+AnnotationAssertion(rdfs:label jia:HPVVaccine "HPV vaccine")
+ClassAssertion(jia:InactivatedImmunizations jia:HPVVaccine)
+
+# Individual: jia:Hands (Hands)
+
+AnnotationAssertion(rdfs:label jia:Hands "Hands")
+ClassAssertion(jia:SmallJoints jia:Hands)
+
+# Individual: jia:HarmUnbornChild (Harm unborn child)
+
+AnnotationAssertion(rdfs:label jia:HarmUnbornChild "Harm unborn child")
+ClassAssertion(jia:SideEffects jia:HarmUnbornChild)
+
+# Individual: jia:HealthcareTeam (Heathcare team)
+
+AnnotationAssertion(rdfs:label jia:HealthcareTeam "Heathcare team")
+ClassAssertion(jia:RolesAndJobs jia:HealthcareTeam)
+
+# Individual: jia:Healthy (Healthy)
+
+AnnotationAssertion(rdfs:label jia:Healthy "Healthy")
+ClassAssertion(jia:StatusOfMedicalCondition jia:Healthy)
+
+# Individual: jia:HeartFailure (Heart failure)
+
+AnnotationAssertion(rdfs:label jia:HeartFailure "Heart failure")
+ClassAssertion(jia:MedicalConditions jia:HeartFailure)
+
+# Individual: jia:Heat (Heat)
+
+AnnotationAssertion(rdfs:label jia:Heat "Heat")
+ClassAssertion(jia:NonMedicinalTreatments jia:Heat)
+
+# Individual: jia:HepatitisA (Hepatitis A)
+
+AnnotationAssertion(rdfs:label jia:HepatitisA "Hepatitis A")
+ClassAssertion(jia:MedicalConditions jia:HepatitisA)
+
+# Individual: jia:HepatitisAVaccine (Hepatitis A vaccine)
+
+AnnotationAssertion(rdfs:label jia:HepatitisAVaccine "Hepatitis A vaccine")
+ClassAssertion(jia:InactivatedImmunizations jia:HepatitisAVaccine)
+
+# Individual: jia:HepatitisBVaccine (Hepatitis B vaccine)
+
+AnnotationAssertion(rdfs:label jia:HepatitisBVaccine "Hepatitis B vaccine")
+ClassAssertion(jia:InactivatedImmunizations jia:HepatitisBVaccine)
+
+# Individual: jia:Hereditary (Hereditary)
+
+AnnotationAssertion(rdfs:label jia:Hereditary "Hereditary")
+ClassAssertion(jia:HeredityRelated jia:Hereditary)
+
+# Individual: jia:HiBVaccine (HiB vaccine)
+
+AnnotationAssertion(rdfs:label jia:HiBVaccine "HiB vaccine")
+ClassAssertion(jia:InactivatedImmunizations jia:HiBVaccine)
+
+# Individual: jia:HighImpactActivities (High impact activities)
+
+AnnotationAssertion(rdfs:label jia:HighImpactActivities "High impact activities")
+ClassAssertion(jia:PhysicalTherapyAndExercise jia:HighImpactActivities)
+
+# Individual: jia:HighTestResult (High test result)
+
+AnnotationAssertion(rdfs:label jia:HighTestResult "High test result")
+ClassAssertion(jia:Outcomes jia:HighTestResult)
+
+# Individual: jia:Hips (Hips)
+
+AnnotationAssertion(rdfs:label jia:Hips "Hips")
+ClassAssertion(jia:LargeJoints jia:Hips)
+
+# Individual: jia:IBD (IBD)
+
+AnnotationAssertion(rdfs:label jia:IBD "IBD")
+ClassAssertion(jia:MedicalConditions jia:IBD)
+
+# Individual: jia:IL-1 (Interleukin-1)
+
+AnnotationAssertion(rdfs:label jia:IL-1 "Interleukin-1")
+ClassAssertion(jia:BodyParts jia:IL-1)
+
+# Individual: jia:IPVVaccine (IPV vaccine)
+
+AnnotationAssertion(rdfs:label jia:IPVVaccine "IPV vaccine")
+ClassAssertion(jia:InactivatedImmunizations jia:IPVVaccine)
+
+# Individual: jia:Ibuprofen (Ibuprofen)
+
+AnnotationAssertion(rdfs:label jia:Ibuprofen "Ibuprofen")
+ClassAssertion(jia:NSAIDs jia:Ibuprofen)
+
+# Individual: jia:Ice (Ice)
+
+AnnotationAssertion(rdfs:label jia:Ice "Ice")
+ClassAssertion(jia:NonMedicinalTreatments jia:Ice)
+
+# Individual: jia:Illness-General (Illness - All)
+
+AnnotationAssertion(rdfs:label jia:Illness-General "Illness - All")
+ClassAssertion(jia:MedicalConditions jia:Illness-General)
+
+# Individual: jia:ImbalancedImmuneSystem (Imbalanced immune system)
+
+AnnotationAssertion(rdfs:label jia:ImbalancedImmuneSystem "Imbalanced immune system")
+ClassAssertion(jia:MedicalConditions jia:ImbalancedImmuneSystem)
+
+# Individual: jia:Immunosuppression (Immunosuppression)
+
+AnnotationAssertion(rdfs:label jia:Immunosuppression "Immunosuppression")
+ClassAssertion(jia:MedicalConditions jia:Immunosuppression)
+
+# Individual: jia:ImproveSymptoms (Improve symptoms)
+
+AnnotationAssertion(rdfs:label jia:ImproveSymptoms "Improve symptoms")
+ClassAssertion(jia:Outcomes jia:ImproveSymptoms)
+
+# Individual: jia:InactiveDisease (Inactive disease)
+
+AnnotationAssertion(rdfs:label jia:InactiveDisease "Inactive disease")
+ClassAssertion(jia:StatusOfMedicalCondition jia:InactiveDisease)
+
+# Individual: jia:InactiveVaccine-All (Inactive vaccine - All)
+
+AnnotationAssertion(rdfs:label jia:InactiveVaccine-All "Inactive vaccine - All")
+ClassAssertion(jia:InactivatedImmunizations jia:InactiveVaccine-All)
+
+# Individual: jia:IncreasedRisk (Increased risk)
+
+AnnotationAssertion(rdfs:label jia:IncreasedRisk "Increased risk")
+ClassAssertion(jia:SideEffects jia:IncreasedRisk)
+
+# Individual: jia:Indomethacin (Indomethacin)
+
+AnnotationAssertion(rdfs:label jia:Indomethacin "Indomethacin")
+ClassAssertion(jia:NSAIDs jia:Indomethacin)
+
+# Individual: jia:Infection (Infection)
+
+AnnotationAssertion(rdfs:label jia:Infection "Infection")
+ClassAssertion(jia:MedicalConditions jia:Infection)
+
+# Individual: jia:Infectious (Infectious)
+
+AnnotationAssertion(rdfs:label jia:Infectious "Infectious")
+ClassAssertion(jia:InfectiousRelated jia:Infectious)
+
+# Individual: jia:Inflammation (Inflammation)
+
+AnnotationAssertion(rdfs:label jia:Inflammation "Inflammation")
+ClassAssertion(jia:SymptomsAndSigns jia:Inflammation)
+
+# Individual: jia:Injection (Injection)
+
+AnnotationAssertion(rdfs:comment jia:Injection "treatment comes as an injection")
+AnnotationAssertion(rdfs:label jia:Injection "Injection")
+ClassAssertion(jia:TreatmentDeliveryMethods jia:Injection)
+
+# Individual: jia:InterestedIn (Interested in)
+
+AnnotationAssertion(rdfs:label jia:InterestedIn "Interested in")
+ClassAssertion(jia:ValuesAndPreferences jia:InterestedIn)
+
+# Individual: jia:InternalOrgans (Internal organs)
+
+AnnotationAssertion(rdfs:label jia:InternalOrgans "Internal organs")
+ClassAssertion(jia:BodyParts jia:InternalOrgans)
+
+# Individual: jia:ItIsSafe (It is safe)
+
+AnnotationAssertion(rdfs:label jia:ItIsSafe "It is safe")
+ClassAssertion(<http://niche.cs.dal.ca/EMA.owl#Recommendation> jia:ItIsSafe)
+
+# Individual: jia:JapaneseEncephalitisVaccine (Japanese encephalitis vaccine)
+
+AnnotationAssertion(rdfs:label jia:JapaneseEncephalitisVaccine "Japanese encephalitis vaccine")
+ClassAssertion(jia:InactivatedImmunizations jia:JapaneseEncephalitisVaccine)
+
+# Individual: jia:Jaw (Jaw)
+
+AnnotationAssertion(rdfs:label jia:Jaw "Jaw")
+ClassAssertion(jia:Joints jia:Jaw)
+
+# Individual: jia:JointInjection (Joint injection)
+
+AnnotationAssertion(rdfs:label jia:JointInjection "Joint injection")
+ClassAssertion(jia:Corticosteroids jia:JointInjection)
+
+# Individual: jia:Joints-All (Joints - All)
+
+AnnotationAssertion(rdfs:label jia:Joints-All "Joints - All")
+ClassAssertion(jia:Joints jia:Joints-All)
+
+# Individual: jia:JuvenileIdiopathicArthritis (Juvenile idiopathic arthritis)
+
+AnnotationAssertion(rdfs:label jia:JuvenileIdiopathicArthritis "Juvenile idiopathic arthritis")
+ClassAssertion(jia:JIA jia:JuvenileIdiopathicArthritis)
+
+# Individual: jia:Knee (Knee)
+
+AnnotationAssertion(rdfs:label jia:Knee "Knee")
+ClassAssertion(jia:LargeJoints jia:Knee)
+
+# Individual: jia:LargeJoints-All (Large joints - All)
+
+AnnotationAssertion(rdfs:label jia:LargeJoints-All "Large joints - All")
+ClassAssertion(jia:LargeJoints jia:LargeJoints-All)
+
+# Individual: jia:LessActive (Less active)
+
+AnnotationAssertion(rdfs:label jia:LessActive "Less active")
+ClassAssertion(jia:Outcomes jia:LessActive)
+
+# Individual: jia:LessSevere (Less severe)
+
+AnnotationAssertion(rdfs:label jia:LessSevere "Less severe")
+ClassAssertion(jia:StatusOfMedicalCondition jia:LessSevere)
+
+# Individual: jia:LimitAbility (Limit ability)
+
+AnnotationAssertion(rdfs:label jia:LimitAbility "Limit ability")
+ClassAssertion(jia:Outcomes jia:LimitAbility)
+
+# Individual: jia:LiquidForm (Liquid form)
+
+AnnotationAssertion(rdfs:label jia:LiquidForm "Liquid form")
+ClassAssertion(jia:TreatmentDeliveryMethods jia:LiquidForm)
+
+# Individual: jia:LiveVaccine (Live vaccines - All)
+
+AnnotationAssertion(rdfs:label jia:LiveVaccine "Live vaccines - All")
+ClassAssertion(jia:ActiveImmunizations jia:LiveVaccine)
+
+# Individual: jia:LiverDamage (Liver damage)
+
+AnnotationAssertion(rdfs:label jia:LiverDamage "Liver damage")
+ClassAssertion(jia:SideEffects jia:LiverDamage)
+
+# Individual: jia:LiverEnzymeASTorALTTest (Liver enzyme (AST or ALT) test)
+
+AnnotationAssertion(rdfs:label jia:LiverEnzymeASTorALTTest "Liver enzyme (AST or ALT) test")
+ClassAssertion(jia:MedicalTests jia:LiverEnzymeASTorALTTest)
+
+# Individual: jia:LocalAnesthetic (Local anesthetic)
+
+AnnotationAssertion(rdfs:label jia:LocalAnesthetic "Local anesthetic")
+ClassAssertion(jia:Medications jia:LocalAnesthetic)
+
+# Individual: jia:LoseWeight (Lose weight)
+
+AnnotationAssertion(rdfs:label jia:LoseWeight "Lose weight")
+ClassAssertion(jia:SymptomsAndSigns jia:LoseWeight)
+
+# Individual: jia:LowImpactActivities (Low impact activities)
+
+AnnotationAssertion(rdfs:label jia:LowImpactActivities "Low impact activities")
+ClassAssertion(jia:PhysicalTherapyAndExercise jia:LowImpactActivities)
+
+# Individual: jia:LowTestResult (Low test result)
+
+AnnotationAssertion(rdfs:label jia:LowTestResult "Low test result")
+ClassAssertion(jia:Outcomes jia:LowTestResult)
+
+# Individual: jia:Lupus (Lupus)
+
+AnnotationAssertion(rdfs:label jia:Lupus "Lupus")
+ClassAssertion(jia:MedicalConditions jia:Lupus)
+
+# Individual: jia:MMRVaccine (MMR vaccine)
+
+AnnotationAssertion(rdfs:label jia:MMRVaccine "MMR vaccine")
+ClassAssertion(jia:ActiveImmunizations jia:MMRVaccine)
+
+# Individual: jia:Male (Male)
+
+AnnotationAssertion(rdfs:label jia:Male "Male")
+ClassAssertion(jia:SexOfChildWithJIA jia:Male)
+
+# Individual: jia:Malnutrition (Malnutrition)
+
+AnnotationAssertion(rdfs:label jia:Malnutrition "Malnutrition")
+ClassAssertion(jia:MedicalConditions jia:Malnutrition)
+
+# Individual: jia:Measles (Measles)
+
+AnnotationAssertion(rdfs:label jia:Measles "Measles")
+ClassAssertion(jia:MedicalConditions jia:Measles)
+
+# Individual: jia:Medications-All (Medications - All)
+
+AnnotationAssertion(rdfs:label jia:Medications-All "Medications - All")
+ClassAssertion(jia:Medications jia:Medications-All)
+
+# Individual: jia:MeningococcusVaccine (Meningococcus vaccine)
+
+AnnotationAssertion(rdfs:label jia:MeningococcusVaccine "Meningococcus vaccine")
+ClassAssertion(jia:InactivatedImmunizations jia:MeningococcusVaccine)
+
+# Individual: jia:Methotrexate (Methotrexate)
+
+AnnotationAssertion(rdfs:label jia:Methotrexate "Methotrexate")
+ClassAssertion(jia:DMARDs jia:Methotrexate)
+
+# Individual: jia:Mild (Mild)
+
+AnnotationAssertion(rdfs:label jia:Mild "Mild")
+ClassAssertion(jia:StatusOfMedicalCondition jia:Mild)
+
+# Individual: jia:MissedDose (Missed dose)
+
+AnnotationAssertion(rdfs:label jia:MissedDose "Missed dose")
+ClassAssertion(jia:Events jia:MissedDose)
+
+# Individual: jia:Monitor (Monitor)
+
+AnnotationAssertion(rdfs:label jia:Monitor "Monitor")
+ClassAssertion(<http://niche.cs.dal.ca/EMA.owl#Recommendation> jia:Monitor)
+
+# Individual: jia:MouthSores (Mouth sores)
+
+AnnotationAssertion(rdfs:label jia:MouthSores "Mouth sores")
+ClassAssertion(jia:SideEffects jia:MouthSores)
+
+# Individual: jia:MuscleSpasm (Muscle spasm)
+
+AnnotationAssertion(rdfs:label jia:MuscleSpasm "Muscle spasm")
+ClassAssertion(jia:SymptomsAndSigns jia:MuscleSpasm)
+
+# Individual: jia:NSAIDs-All (NSAIDs - All)
+
+AnnotationAssertion(rdfs:label jia:NSAIDs-All "NSAIDs - All")
+ClassAssertion(jia:NSAIDs jia:NSAIDs-All)
+
+# Individual: jia:Naproxen (Naproxen)
+
+AnnotationAssertion(rdfs:label jia:Naproxen "Naproxen")
+ClassAssertion(jia:NSAIDs jia:Naproxen)
+
+# Individual: jia:Nausea (Nausea)
+
+AnnotationAssertion(rdfs:label jia:Nausea "Nausea")
+ClassAssertion(jia:SideEffects jia:Nausea)
+
+# Individual: jia:Neck (Neck)
+
+AnnotationAssertion(rdfs:label jia:Neck "Neck")
+ClassAssertion(jia:BodyParts jia:Neck)
+
+# Individual: jia:NegativeOrPoorEffect (Negative or poor effect)
+
+AnnotationAssertion(rdfs:comment jia:NegativeOrPoorEffect "the effect is harmful or less than desired")
+AnnotationAssertion(rdfs:label jia:NegativeOrPoorEffect "Negative or poor effect")
+ClassAssertion(jia:Effectiveness jia:NegativeOrPoorEffect)
+
+# Individual: jia:NeurologicalDiseases (Neurological diseases - All)
+
+AnnotationAssertion(rdfs:label jia:NeurologicalDiseases "Neurological diseases - All")
+ClassAssertion(jia:MedicalConditions jia:NeurologicalDiseases)
+
+# Individual: jia:NewMedication (New medication)
+
+AnnotationAssertion(rdfs:label jia:NewMedication "New medication")
+ClassAssertion(jia:Medications jia:NewMedication)
+
+# Individual: jia:NoPlansToStopTreatment (No plans to stop treatment)
+
+AnnotationAssertion(rdfs:label jia:NoPlansToStopTreatment "No plans to stop treatment")
+ClassAssertion(jia:ValuesAndPreferences jia:NoPlansToStopTreatment)
+
+# Individual: jia:NormalGrowth (Normal growth)
+
+AnnotationAssertion(rdfs:label jia:NormalGrowth "Normal growth")
+ClassAssertion(jia:GrowthRelated jia:NormalGrowth)
+
+# Individual: jia:NormalHealth (Normal health)
+
+AnnotationAssertion(rdfs:label jia:NormalHealth "Normal health")
+ClassAssertion(jia:Outcomes jia:NormalHealth)
+
+# Individual: jia:NormalParticipation (Normal participation)
+
+AnnotationAssertion(rdfs:label jia:NormalParticipation "Normal participation")
+ClassAssertion(jia:Outcomes jia:NormalParticipation)
+
+# Individual: jia:NormalTestResults (Normal test results)
+
+AnnotationAssertion(rdfs:label jia:NormalTestResults "Normal test results")
+ClassAssertion(jia:Outcomes jia:NormalTestResults)
+
+# Individual: jia:NotAddictive (Not addictive)
+
+AnnotationAssertion(rdfs:label jia:NotAddictive "Not addictive")
+ClassAssertion(jia:SideEffects jia:NotAddictive)
+
+# Individual: jia:NotCause (Does not cause)
+
+AnnotationAssertion(rdfs:comment jia:NotCause "the lack of a causal relationship between two themes")
+AnnotationAssertion(rdfs:label jia:NotCause "Does not cause")
+ClassAssertion(jia:Outcomes jia:NotCause)
+
+# Individual: jia:NotExtend (Not extend)
+
+AnnotationAssertion(rdfs:comment jia:NotExtend "not having inflammation spread from one part of the body to another")
+AnnotationAssertion(rdfs:label jia:NotExtend "Not extend")
+ClassAssertion(jia:Outcomes jia:NotExtend)
+
+# Individual: jia:NotHereditary (Not hereditary)
+
+AnnotationAssertion(rdfs:label jia:NotHereditary "Not hereditary")
+ClassAssertion(jia:HeredityRelated jia:NotHereditary)
+
+# Individual: jia:NotInfectious (Not infectious)
+
+AnnotationAssertion(rdfs:label jia:NotInfectious "Not infectious")
+ClassAssertion(jia:InfectiousRelated jia:NotInfectious)
+
+# Individual: jia:NotTooHot (Not too hot)
+
+AnnotationAssertion(rdfs:label jia:NotTooHot "Not too hot")
+ClassAssertion(<http://niche.cs.dal.ca/EMA.owl#Recommendation> jia:NotTooHot)
+
+# Individual: jia:NotUnderControl (Not under control)
+
+AnnotationAssertion(rdfs:label jia:NotUnderControl "Not under control")
+ClassAssertion(jia:StatusOfMedicalCondition jia:NotUnderControl)
+
+# Individual: jia:Numbness (Numbness)
+
+AnnotationAssertion(rdfs:label jia:Numbness "Numbness")
+ClassAssertion(jia:SideEffects jia:Numbness)
+
+# Individual: jia:OccupationalTherapist (Occupational therapist)
+
+AnnotationAssertion(rdfs:label jia:OccupationalTherapist "Occupational therapist")
+ClassAssertion(jia:RolesAndJobs jia:OccupationalTherapist)
+
+# Individual: jia:OligoarticularJIA (Oligoarticular JIA)
+
+AnnotationAssertion(rdfs:label jia:OligoarticularJIA "Oligoarticular JIA")
+ClassAssertion(jia:JIASubtype jia:OligoarticularJIA)
+
+# Individual: jia:Opthamologist (Opthamologist)
+
+AnnotationAssertion(rdfs:label jia:Opthamologist "Opthamologist")
+ClassAssertion(jia:RolesAndJobs jia:Opthamologist)
+
+# Individual: jia:Optometrist (Optomotrist)
+
+AnnotationAssertion(rdfs:label jia:Optometrist "Optomotrist")
+ClassAssertion(jia:RolesAndJobs jia:Optometrist)
+
+# Individual: jia:OralCorticosteroid (Oral corticosteroid)
+
+AnnotationAssertion(rdfs:label jia:OralCorticosteroid "Oral corticosteroid")
+ClassAssertion(jia:Corticosteroids jia:OralCorticosteroid)
+
+# Individual: jia:Orthodontist (Orthodontist)
+
+AnnotationAssertion(rdfs:label jia:Orthodontist "Orthodontist")
+ClassAssertion(jia:RolesAndJobs jia:Orthodontist)
+
+# Individual: jia:Orthotics (Orthotics)
+
+AnnotationAssertion(rdfs:label jia:Orthotics "Orthotics")
+ClassAssertion(jia:NonMedicinalTreatments jia:Orthotics)
+
+# Individual: jia:Pain (Pain)
+
+AnnotationAssertion(rdfs:label jia:Pain "Pain")
+ClassAssertion(jia:SymptomsAndSigns jia:Pain)
+
+# Individual: jia:Painless (Painless)
+
+AnnotationAssertion(rdfs:label jia:Painless "Painless")
+ClassAssertion(jia:SymptomsAndSigns jia:Painless)
+
+# Individual: jia:Parent (Parent)
+
+AnnotationAssertion(rdfs:label jia:Parent "Parent")
+ClassAssertion(jia:RolesAndJobs jia:Parent)
+
+# Individual: jia:PediatricRheumatologyClinic (Pediatric rheumatology clinic)
+
+AnnotationAssertion(rdfs:label jia:PediatricRheumatologyClinic "Pediatric rheumatology clinic")
+ClassAssertion(jia:RolesAndJobs jia:PediatricRheumatologyClinic)
+
+# Individual: jia:PhysicalActivity (Physical activity)
+
+AnnotationAssertion(rdfs:label jia:PhysicalActivity "Physical activity")
+ClassAssertion(jia:PhysicalTherapyAndExercise jia:PhysicalActivity)
+
+# Individual: jia:PhysicianGlobalAssessment (Physician global assessment)
+
+AnnotationAssertion(rdfs:label jia:PhysicianGlobalAssessment "Physician global assessment")
+ClassAssertion(jia:MedicalTests jia:PhysicianGlobalAssessment)
+
+# Individual: jia:Physiotherapist (Physiotherapist)
+
+AnnotationAssertion(rdfs:label jia:Physiotherapist "Physiotherapist")
+ClassAssertion(jia:RolesAndJobs jia:Physiotherapist)
+
+# Individual: jia:PinkSkin (Pink skin)
+
+AnnotationAssertion(rdfs:label jia:PinkSkin "Pink skin")
+ClassAssertion(jia:SymptomsAndSigns jia:PinkSkin)
+
+# Individual: jia:PittingOrRidging (Pitting or ridging)
+
+AnnotationAssertion(rdfs:label jia:PittingOrRidging "Pitting or ridging")
+ClassAssertion(jia:SymptomsAndSigns jia:PittingOrRidging)
+
+# Individual: jia:PneumococcusVaccine (Pneumococcus Vaccine)
+
+AnnotationAssertion(rdfs:label jia:PneumococcusVaccine "Pneumococcus Vaccine")
+ClassAssertion(jia:InactivatedImmunizations jia:PneumococcusVaccine)
+
+# Individual: jia:PolyarticularJIA (Polyarticular JIA)
+
+AnnotationAssertion(rdfs:label jia:PolyarticularJIA "Polyarticular JIA")
+ClassAssertion(jia:JIASubtype jia:PolyarticularJIA)
+
+# Individual: jia:PoorAppetite (Poor appetite)
+
+AnnotationAssertion(rdfs:label jia:PoorAppetite "Poor appetite")
+ClassAssertion(jia:SymptomsAndSigns jia:PoorAppetite)
+
+# Individual: jia:PositiveEffect (Positive effect)
+
+AnnotationAssertion(rdfs:comment jia:PositiveEffect "the effect is as desired or healthful")
+AnnotationAssertion(rdfs:label jia:PositiveEffect "Positive effect")
+ClassAssertion(jia:Effectiveness jia:PositiveEffect)
+
+# Individual: jia:Pre-TeenYears (Pre-teen years)
+
+AnnotationAssertion(rdfs:label jia:Pre-TeenYears "Pre-teen years")
+ClassAssertion(jia:AgeOfChildWithJIA jia:Pre-TeenYears)
+
+# Individual: jia:Predictable (Predictable)
+
+AnnotationAssertion(rdfs:label jia:Predictable "Predictable")
+ClassAssertion(jia:StatusOfMedicalCondition jia:Predictable)
+
+# Individual: jia:Preference (Preference)
+
+AnnotationAssertion(rdfs:label jia:Preference "Preference")
+ClassAssertion(jia:ValuesAndPreferences jia:Preference)
+
+# Individual: jia:Pregnancy (Pregnancy)
+
+AnnotationAssertion(rdfs:label jia:Pregnancy "Pregnancy")
+ClassAssertion(jia:MedicalConditions jia:Pregnancy)
+
+# Individual: jia:ProvideInstruction (Provide instruction)
+
+AnnotationAssertion(rdfs:label jia:ProvideInstruction "Provide instruction")
+ClassAssertion(<http://niche.cs.dal.ca/EMA.owl#Fact> jia:ProvideInstruction)
+
+# Individual: jia:ProvidePhysicalSupport (Provide phsyical support)
+
+AnnotationAssertion(rdfs:label jia:ProvidePhysicalSupport "Provide phsyical support")
+ClassAssertion(jia:Outcomes jia:ProvidePhysicalSupport)
+
+# Individual: jia:ProvidePrognosis (Provide prognosis)
+
+AnnotationAssertion(rdfs:label jia:ProvidePrognosis "Provide prognosis")
+ClassAssertion(<http://niche.cs.dal.ca/EMA.owl#Fact> jia:ProvidePrognosis)
+
+# Individual: jia:Psoriasis (Psoriasis)
+
+AnnotationAssertion(rdfs:label jia:Psoriasis "Psoriasis")
+ClassAssertion(jia:MedicalConditions jia:Psoriasis)
+
+# Individual: jia:PsoriaticJIA (Psoriatic JIA)
+
+AnnotationAssertion(rdfs:label jia:PsoriaticJIA "Psoriatic JIA")
+ClassAssertion(jia:JIASubtype jia:PsoriaticJIA)
+
+# Individual: jia:Pupil (Pupil)
+
+AnnotationAssertion(rdfs:label jia:Pupil "Pupil")
+ClassAssertion(jia:BodyParts jia:Pupil)
+
+# Individual: jia:RFNegative (RF negative)
+
+AnnotationAssertion(rdfs:label jia:RFNegative "RF negative")
+ClassAssertion(jia:SymptomsAndSigns jia:RFNegative)
+
+# Individual: jia:RFPositive (RF Positive)
+
+AnnotationAssertion(rdfs:label jia:RFPositive "RF Positive")
+ClassAssertion(jia:SymptomsAndSigns jia:RFPositive)
+
+# Individual: jia:RabiesVaccine (Rabies vaccine)
+
+AnnotationAssertion(rdfs:label jia:RabiesVaccine "Rabies vaccine")
+ClassAssertion(jia:InactivatedImmunizations jia:RabiesVaccine)
+
+# Individual: jia:RangeOfMotion (Range of motion)
+
+AnnotationAssertion(rdfs:label jia:RangeOfMotion "Range of motion")
+ClassAssertion(jia:SymptomsAndSigns jia:RangeOfMotion)
+
+# Individual: jia:Rash (Rash)
+
+AnnotationAssertion(rdfs:label jia:Rash "Rash")
+ClassAssertion(jia:SideEffects jia:Rash)
+
+# Individual: jia:ReceivingOngoingTreatment (Receiving ongoing treatment)
+
+AnnotationAssertion(rdfs:label jia:ReceivingOngoingTreatment "Receiving ongoing treatment")
+ClassAssertion(jia:Events jia:ReceivingOngoingTreatment)
+
+# Individual: jia:ReduceTreatment (Reduce treatment)
+
+AnnotationAssertion(rdfs:label jia:ReduceTreatment "Reduce treatment")
+ClassAssertion(<http://niche.cs.dal.ca/EMA.owl#Recommendation> jia:ReduceTreatment)
+
+# Individual: jia:RegularSchedule (Keep a regular schedule)
+
+AnnotationAssertion(rdfs:label jia:RegularSchedule "Keep a regular schedule")
+ClassAssertion(<http://niche.cs.dal.ca/EMA.owl#Recommendation> jia:RegularSchedule)
+
+# Individual: jia:Remission (Remission)
+
+AnnotationAssertion(rdfs:label jia:Remission "Remission")
+ClassAssertion(jia:StatusOfMedicalCondition jia:Remission)
+
+# Individual: jia:RestOrLowActivity (Rest or low activity)
+
+AnnotationAssertion(rdfs:label jia:RestOrLowActivity "Rest or low activity")
+ClassAssertion(<http://niche.cs.dal.ca/EMA.owl#Recommendation> jia:RestOrLowActivity)
+
+# Individual: jia:ResumeTreatment (Resume treatment)
+
+AnnotationAssertion(rdfs:label jia:ResumeTreatment "Resume treatment")
+ClassAssertion(<http://niche.cs.dal.ca/EMA.owl#Recommendation> jia:ResumeTreatment)
+
+# Individual: jia:RheumatoidNodules (Rheumatoid nodules)
+
+AnnotationAssertion(rdfs:label jia:RheumatoidNodules "Rheumatoid nodules")
+ClassAssertion(jia:SymptomsAndSigns jia:RheumatoidNodules)
+
+# Individual: jia:Rheumatologist (Rheumatologist)
+
+AnnotationAssertion(rdfs:label jia:Rheumatologist "Rheumatologist")
+ClassAssertion(jia:RolesAndJobs jia:Rheumatologist)
+
+# Individual: jia:Risk (Risk)
+
+AnnotationAssertion(rdfs:comment jia:Risk "expresses the fact that certain factors cause a risk for a certain condition or outcome")
+AnnotationAssertion(rdfs:label jia:Risk "Risk")
+ClassAssertion(jia:Likelihood jia:Risk)
+
+# Individual: jia:RotavirusVaccine (Rotavirus vaccine)
+
+AnnotationAssertion(rdfs:label jia:RotavirusVaccine "Rotavirus vaccine")
+ClassAssertion(jia:ActiveImmunizations jia:RotavirusVaccine)
+
+# Individual: jia:RoutineSchedule (Routine schedule)
+
+AnnotationAssertion(rdfs:label jia:RoutineSchedule "Routine schedule")
+ClassAssertion(jia:Events jia:RoutineSchedule)
+
+# Individual: jia:SacroilliacJoint (Sacroiliac joint)
+
+AnnotationAssertion(rdfs:label jia:SacroilliacJoint "Sacroiliac joint")
+ClassAssertion(jia:Joints jia:SacroilliacJoint)
+
+# Individual: jia:ScarTissue (Scar tissue)
+
+AnnotationAssertion(rdfs:label jia:ScarTissue "Scar tissue")
+ClassAssertion(jia:Outcomes jia:ScarTissue)
+
+# Individual: jia:SchoolOrWorkDay (School or work day)
+
+AnnotationAssertion(rdfs:label jia:SchoolOrWorkDay "School or work day")
+ClassAssertion(jia:Events jia:SchoolOrWorkDay)
+
+# Individual: jia:SeeYourDoctor (See your doctor)
+
+AnnotationAssertion(rdfs:label jia:SeeYourDoctor "See your doctor")
+ClassAssertion(<http://niche.cs.dal.ca/EMA.owl#Recommendation> jia:SeeYourDoctor)
+
+# Individual: jia:SeriousLungProblem (Serious lung problem)
+
+AnnotationAssertion(rdfs:label jia:SeriousLungProblem "Serious lung problem")
+ClassAssertion(jia:SideEffects jia:SeriousLungProblem)
+
+# Individual: jia:Severe (Severe)
+
+AnnotationAssertion(rdfs:label jia:Severe "Severe")
+ClassAssertion(jia:StatusOfMedicalCondition jia:Severe)
+
+# Individual: jia:SexuallyActive (Sexually active)
+
+AnnotationAssertion(rdfs:label jia:SexuallyActive "Sexually active")
+ClassAssertion(jia:BehaviouralAndEnvironmentalFactors jia:SexuallyActive)
+
+# Individual: jia:Shivering (Shivering)
+
+AnnotationAssertion(rdfs:label jia:Shivering "Shivering")
+ClassAssertion(jia:SideEffects jia:Shivering)
+
+# Individual: jia:ShortnessOfBreath (Shortness of breath)
+
+AnnotationAssertion(rdfs:label jia:ShortnessOfBreath "Shortness of breath")
+ClassAssertion(jia:SideEffects jia:ShortnessOfBreath)
+
+# Individual: jia:SideEffectsGeneral (Side effects - All)
+
+AnnotationAssertion(rdfs:label jia:SideEffectsGeneral "Side effects - All")
+ClassAssertion(jia:SideEffects jia:SideEffectsGeneral)
+
+# Individual: jia:SkinBecomesBrightRed (Skin becomes bright red)
+
+AnnotationAssertion(rdfs:label jia:SkinBecomesBrightRed "Skin becomes bright red")
+ClassAssertion(jia:SideEffects jia:SkinBecomesBrightRed)
+
+# Individual: jia:SkinBecomesPale (Skin becomes pale)
+
+AnnotationAssertion(rdfs:label jia:SkinBecomesPale "Skin becomes pale")
+ClassAssertion(jia:SideEffects jia:SkinBecomesPale)
+
+# Individual: jia:SkinConditions (Skin conditions - All)
+
+AnnotationAssertion(rdfs:label jia:SkinConditions "Skin conditions - All")
+ClassAssertion(jia:MedicalConditions jia:SkinConditions)
+
+# Individual: jia:SkinReturnsToNormal (Skin returns to normal colour)
+
+AnnotationAssertion(rdfs:label jia:SkinReturnsToNormal "Skin returns to normal colour")
+ClassAssertion(jia:SideEffects jia:SkinReturnsToNormal)
+
+# Individual: jia:SlowGrowth (Slow growth)
+
+AnnotationAssertion(rdfs:label jia:SlowGrowth "Slow growth")
+ClassAssertion(jia:GrowthRelated jia:SlowGrowth)
+ClassAssertion(jia:SideEffects jia:SlowGrowth)
+
+# Individual: jia:SmallChin (Small chin)
+
+AnnotationAssertion(rdfs:label jia:SmallChin "Small chin")
+ClassAssertion(jia:Outcomes jia:SmallChin)
+
+# Individual: jia:SmallJoints-All (Small joints - All)
+
+AnnotationAssertion(rdfs:label jia:SmallJoints-All "Small joints - All")
+ClassAssertion(jia:SmallJoints jia:SmallJoints-All)
+
+# Individual: jia:SpikingFever (Spiking fever)
+
+AnnotationAssertion(rdfs:label jia:SpikingFever "Spiking fever")
+ClassAssertion(jia:SymptomsAndSigns jia:SpikingFever)
+
+# Individual: jia:Spine (Spine)
+
+AnnotationAssertion(rdfs:label jia:Spine "Spine")
+ClassAssertion(jia:BodyParts jia:Spine)
+
+# Individual: jia:Splint (Splints)
+
+AnnotationAssertion(rdfs:label jia:Splint "Splints")
+ClassAssertion(jia:NonMedicinalTreatments jia:Splint)
+
+# Individual: jia:StartOfSymptom (Start of symptom)
+
+AnnotationAssertion(rdfs:label jia:StartOfSymptom "Start of symptom")
+ClassAssertion(jia:Events jia:StartOfSymptom)
+
+# Individual: jia:StartingTreatment (Started treatment)
+
+AnnotationAssertion(rdfs:label jia:StartingTreatment "Started treatment")
+ClassAssertion(jia:Events jia:StartingTreatment)
+
+# Individual: jia:StayingStill (Staying still)
+
+AnnotationAssertion(rdfs:comment jia:StayingStill "not moving around")
+AnnotationAssertion(rdfs:label jia:StayingStill "Staying still")
+ClassAssertion(jia:BehaviouralAndEnvironmentalFactors jia:StayingStill)
+
+# Individual: jia:SterileConditions (Sterile conditions)
+
+AnnotationAssertion(rdfs:label jia:SterileConditions "Sterile conditions")
+ClassAssertion(jia:BehaviouralAndEnvironmentalFactors jia:SterileConditions)
+
+# Individual: jia:SteroidEyeDrops (Steroid eye drops)
+
+AnnotationAssertion(rdfs:label jia:SteroidEyeDrops "Steroid eye drops")
+ClassAssertion(jia:Corticosteroids jia:SteroidEyeDrops)
+
+# Individual: jia:Stiffness (Stiffness)
+
+AnnotationAssertion(rdfs:label jia:Stiffness "Stiffness")
+ClassAssertion(jia:SymptomsAndSigns jia:Stiffness)
+
+# Individual: jia:Sting (Sting)
+
+AnnotationAssertion(rdfs:label jia:Sting "Sting")
+ClassAssertion(jia:SideEffects jia:Sting)
+
+# Individual: jia:StopTheTreatment (Stop the treatment)
+
+AnnotationAssertion(rdfs:label jia:StopTheTreatment "Stop the treatment")
+ClassAssertion(<http://niche.cs.dal.ca/EMA.owl#Recommendation> jia:StopTheTreatment)
+
+# Individual: jia:StorageTips (Storage tips)
+
+AnnotationAssertion(rdfs:label jia:StorageTips "Storage tips")
+ClassAssertion(<http://niche.cs.dal.ca/EMA.owl#Recommendation> jia:StorageTips)
+
+# Individual: jia:Stretch (Stretching)
+
+AnnotationAssertion(rdfs:label jia:Stretch "Stretching")
+ClassAssertion(jia:PhysicalTherapyAndExercise jia:Stretch)
+
+# Individual: jia:SulfaAntibiotics (Sulfa antibiotics)
+
+AnnotationAssertion(rdfs:label jia:SulfaAntibiotics "Sulfa antibiotics")
+ClassAssertion(jia:Medications jia:SulfaAntibiotics)
+
+# Individual: jia:Surgery (Surgery)
+
+AnnotationAssertion(rdfs:label jia:Surgery "Surgery")
+ClassAssertion(jia:MedicalProceedures jia:Surgery)
+
+# Individual: jia:SymetricalActiveJoints (Symetrical active joints)
+
+AnnotationAssertion(rdfs:label jia:SymetricalActiveJoints "Symetrical active joints")
+ClassAssertion(jia:SymptomsAndSigns jia:SymetricalActiveJoints)
+
+# Individual: jia:Symptomless (Symptomless)
+
+AnnotationAssertion(rdfs:label jia:Symptomless "Symptomless")
+ClassAssertion(jia:SymptomsAndSigns jia:Symptomless)
+
+# Individual: jia:Synovium (Synovium)
+
+AnnotationAssertion(rdfs:label jia:Synovium "Synovium")
+ClassAssertion(jia:BodyParts jia:Synovium)
+
+# Individual: jia:SystemicJIA (Systemic JIA)
+
+AnnotationAssertion(rdfs:label jia:SystemicJIA "Systemic JIA")
+ClassAssertion(jia:JIASubtype jia:SystemicJIA)
+
+# Individual: jia:TDAPVaccine (TDAP vaccine)
+
+AnnotationAssertion(rdfs:label jia:TDAPVaccine "TDAP vaccine")
+ClassAssertion(jia:InactivatedImmunizations jia:TDAPVaccine)
+
+# Individual: jia:TNF (TNF)
+
+AnnotationAssertion(rdfs:label jia:TNF "TNF")
+ClassAssertion(jia:BodyParts jia:TNF)
+
+# Individual: jia:TableOrGraphic (Table or graphic)
+
+AnnotationAssertion(rdfs:comment jia:TableOrGraphic "an image of a table is attached here")
+AnnotationAssertion(rdfs:label jia:TableOrGraphic "Table or graphic")
+ClassAssertion(jia:FactsAndFigures jia:TableOrGraphic)
+
+# Individual: jia:TabletOrPill (Pill or tablet)
+
+AnnotationAssertion(rdfs:comment jia:TabletOrPill "treatment comes in pill form")
+AnnotationAssertion(rdfs:label jia:TabletOrPill "Pill or tablet")
+ClassAssertion(jia:TreatmentDeliveryMethods jia:TabletOrPill)
+
+# Individual: jia:TakeTest (Take test)
+
+AnnotationAssertion(rdfs:label jia:TakeTest "Take test")
+ClassAssertion(<http://niche.cs.dal.ca/EMA.owl#Recommendation> jia:TakeTest)
+
+# Individual: jia:TalkToYourDoctor (Talk to your doctor)
+
+AnnotationAssertion(rdfs:label jia:TalkToYourDoctor "Talk to your doctor")
+ClassAssertion(<http://niche.cs.dal.ca/EMA.owl#Recommendation> jia:TalkToYourDoctor)
+
+# Individual: jia:TeenageYears (Teenage years)
+
+AnnotationAssertion(rdfs:label jia:TeenageYears "Teenage years")
+ClassAssertion(jia:AgeOfChildWithJIA jia:TeenageYears)
+
+# Individual: jia:Tendons (Tendons)
+
+AnnotationAssertion(rdfs:label jia:Tendons "Tendons")
+ClassAssertion(jia:BodyParts jia:Tendons)
+
+# Individual: jia:TetanusVaccine (Tetanus vaccine)
+
+AnnotationAssertion(rdfs:label jia:TetanusVaccine "Tetanus vaccine")
+ClassAssertion(jia:InactivatedImmunizations jia:TetanusVaccine)
+
+# Individual: jia:TherapyExcercises (Therapy exercises)
+
+AnnotationAssertion(rdfs:label jia:TherapyExcercises "Therapy exercises")
+ClassAssertion(jia:PhysicalTherapyAndExercise jia:TherapyExcercises)
+
+# Individual: jia:ThinkingAboutBecomingSexuallyActive (Thinking about becoming sexually active)
+
+AnnotationAssertion(rdfs:label jia:ThinkingAboutBecomingSexuallyActive "Thinking about becoming sexually active")
+ClassAssertion(jia:ValuesAndPreferences jia:ThinkingAboutBecomingSexuallyActive)
+
+# Individual: jia:ThinkingAboutGettingPregnant (thinking about getting pregnant)
+
+AnnotationAssertion(rdfs:label jia:ThinkingAboutGettingPregnant "thinking about getting pregnant")
+ClassAssertion(jia:ValuesAndPreferences jia:ThinkingAboutGettingPregnant)
+
+# Individual: jia:ThyroidDisease (Thyroid disease)
+
+AnnotationAssertion(rdfs:label jia:ThyroidDisease "Thyroid disease")
+ClassAssertion(jia:MedicalConditions jia:ThyroidDisease)
+
+# Individual: jia:Toes (Toes)
+
+AnnotationAssertion(rdfs:label jia:Toes "Toes")
+ClassAssertion(jia:SmallJoints jia:Toes)
+
+# Individual: jia:TreatmentReduced (Treatment reduced)
+
+AnnotationAssertion(rdfs:label jia:TreatmentReduced "Treatment reduced")
+ClassAssertion(jia:Events jia:TreatmentReduced)
+
+# Individual: jia:TreatmentStopped (Treatment stopped)
+
+AnnotationAssertion(rdfs:label jia:TreatmentStopped "Treatment stopped")
+ClassAssertion(jia:Events jia:TreatmentStopped)
+
+# Individual: jia:TreatmentToPreventInfection (Treatment to prevent infection)
+
+AnnotationAssertion(rdfs:label jia:TreatmentToPreventInfection "Treatment to prevent infection")
+ClassAssertion(jia:Medications jia:TreatmentToPreventInfection)
+
+# Individual: jia:Treatments-All (Treatments - All)
+
+AnnotationAssertion(rdfs:label jia:Treatments-All "Treatments - All")
+ClassAssertion(jia:Treatments jia:Treatments-All)
+
+# Individual: jia:TuberculosisTest (Tuberculosis test)
+
+AnnotationAssertion(rdfs:label jia:TuberculosisTest "Tuberculosis test")
+ClassAssertion(jia:MedicalTests jia:TuberculosisTest)
+
+# Individual: jia:TyphoidVaccine-Injection (Typhoid vaccine - injection)
+
+AnnotationAssertion(rdfs:label jia:TyphoidVaccine-Injection "Typhoid vaccine - injection")
+ClassAssertion(jia:InactivatedImmunizations jia:TyphoidVaccine-Injection)
+
+# Individual: jia:TyphoidVaccine-Oral (Typhoid vaccine - oral)
+
+AnnotationAssertion(rdfs:label jia:TyphoidVaccine-Oral "Typhoid vaccine - oral")
+ClassAssertion(jia:ActiveImmunizations jia:TyphoidVaccine-Oral)
+
+# Individual: jia:UnderControl (Under control)
+
+AnnotationAssertion(rdfs:label jia:UnderControl "Under control")
+ClassAssertion(jia:StatusOfMedicalCondition jia:UnderControl)
+
+# Individual: jia:Undetected (Undetected)
+
+AnnotationAssertion(rdfs:label jia:Undetected "Undetected")
+ClassAssertion(jia:StatusOfMedicalCondition jia:Undetected)
+
+# Individual: jia:Unpredictable (Unpredictable)
+
+AnnotationAssertion(rdfs:label jia:Unpredictable "Unpredictable")
+ClassAssertion(jia:StatusOfMedicalCondition jia:Unpredictable)
+
+# Individual: jia:Untreated (Untreated)
+
+AnnotationAssertion(rdfs:label jia:Untreated "Untreated")
+ClassAssertion(jia:StatusOfMedicalCondition jia:Untreated)
+
+# Individual: jia:UpToDate (Keep up to date)
+
+AnnotationAssertion(rdfs:label jia:UpToDate "Keep up to date")
+ClassAssertion(<http://niche.cs.dal.ca/EMA.owl#Recommendation> jia:UpToDate)
+
+# Individual: jia:UrineTest (Urine test)
+
+AnnotationAssertion(rdfs:label jia:UrineTest "Urine test")
+ClassAssertion(jia:MedicalTests jia:UrineTest)
+
+# Individual: jia:UseTreatment (Use treatment)
+
+AnnotationAssertion(rdfs:label jia:UseTreatment "Use treatment")
+ClassAssertion(<http://niche.cs.dal.ca/EMA.owl#Recommendation> jia:UseTreatment)
+
+# Individual: jia:Uveitis (Uveitis)
+
+AnnotationAssertion(rdfs:label jia:Uveitis "Uveitis")
+ClassAssertion(jia:MedicalConditions jia:Uveitis)
+
+# Individual: jia:Vaccine-All (Vaccines - All)
+
+AnnotationAssertion(rdfs:label jia:Vaccine-All "Vaccines - All")
+ClassAssertion(jia:Immunizations jia:Vaccine-All)
+
+# Individual: jia:VisionLoss (Vision loss)
+
+AnnotationAssertion(rdfs:label jia:VisionLoss "Vision loss")
+ClassAssertion(jia:Outcomes jia:VisionLoss)
+
+# Individual: jia:WBCCount (WBC count)
+
+AnnotationAssertion(rdfs:label jia:WBCCount "WBC count")
+ClassAssertion(jia:BloodTests jia:WBCCount)
+
+# Individual: jia:Wait (Wait)
+
+AnnotationAssertion(rdfs:label jia:Wait "Wait")
+ClassAssertion(<http://niche.cs.dal.ca/EMA.owl#Recommendation> jia:Wait)
+
+# Individual: jia:WantToStopTreatment (Want to stop treatment)
+
+AnnotationAssertion(rdfs:label jia:WantToStopTreatment "Want to stop treatment")
+ClassAssertion(jia:ValuesAndPreferences jia:WantToStopTreatment)
+
+# Individual: jia:WashHands (Wash hands)
+
+AnnotationAssertion(rdfs:label jia:WashHands "Wash hands")
+ClassAssertion(<http://niche.cs.dal.ca/EMA.owl#Recommendation> jia:WashHands)
+
+# Individual: jia:WhenSleeping (When sleeping)
+
+AnnotationAssertion(rdfs:label jia:WhenSleeping "When sleeping")
+ClassAssertion(jia:Events jia:WhenSleeping)
+
+# Individual: jia:WhenWakingUp (When waking up)
+
+AnnotationAssertion(rdfs:label jia:WhenWakingUp "When waking up")
+ClassAssertion(jia:Events jia:WhenWakingUp)
+
+# Individual: jia:WillBeTravelling (Will be travelling)
+
+AnnotationAssertion(rdfs:label jia:WillBeTravelling "Will be travelling")
+ClassAssertion(jia:Events jia:WillBeTravelling)
+
+# Individual: jia:WorsenSymptoms (Worsen symptoms)
+
+AnnotationAssertion(rdfs:label jia:WorsenSymptoms "Worsen symptoms")
+ClassAssertion(jia:Outcomes jia:WorsenSymptoms)
+
+# Individual: jia:Wrist (Wrist)
+
+AnnotationAssertion(rdfs:label jia:Wrist "Wrist")
+ClassAssertion(jia:SmallJoints jia:Wrist)
+
+# Individual: jia:XRay (X-ray)
+
+AnnotationAssertion(rdfs:label jia:XRay "X-ray")
+ClassAssertion(jia:MedicalTests jia:XRay)
+
+# Individual: jia:YellowFeverVaccine (Yellow fever vaccine)
+
+AnnotationAssertion(rdfs:label jia:YellowFeverVaccine "Yellow fever vaccine")
+ClassAssertion(jia:ActiveImmunizations jia:YellowFeverVaccine)
+
+# Individual: jia:Young (Young)
+
+AnnotationAssertion(rdfs:label jia:Young "Young")
+ClassAssertion(jia:AgeOfChildWithJIA jia:Young)
+
+# Individual: <http://niche.cs.dal.ca/EMA_JIA.owl#16OrYounger> (16 or younger)
+
+AnnotationAssertion(rdfs:label <http://niche.cs.dal.ca/EMA_JIA.owl#16OrYounger> "16 or younger")
+ClassAssertion(jia:AgeOfChildWithJIA <http://niche.cs.dal.ca/EMA_JIA.owl#16OrYounger>)
+
+# Individual: <http://niche.cs.dal.ca/EMA_JIA.owl#2-4YearsOld> (2-4 years old)
+
+AnnotationAssertion(rdfs:label <http://niche.cs.dal.ca/EMA_JIA.owl#2-4YearsOld> "2-4 years old")
+ClassAssertion(jia:AgeOfChildWithJIA <http://niche.cs.dal.ca/EMA_JIA.owl#2-4YearsOld>)
+
+# Individual: <http://niche.cs.dal.ca/EMA_JIA.owl#4OrYounger> (4 or younger)
+
+AnnotationAssertion(rdfs:label <http://niche.cs.dal.ca/EMA_JIA.owl#4OrYounger> "4 or younger")
+ClassAssertion(jia:AgeOfChildWithJIA <http://niche.cs.dal.ca/EMA_JIA.owl#4OrYounger>)
+
+# Individual: <http://niche.cs.dal.ca/EMA_JIA.owl#6-12YearsOld> (6-12 years old)
+
+AnnotationAssertion(rdfs:label <http://niche.cs.dal.ca/EMA_JIA.owl#6-12YearsOld> "6-12 years old")
+ClassAssertion(jia:AgeOfChildWithJIA <http://niche.cs.dal.ca/EMA_JIA.owl#6-12YearsOld>)
+
+# Individual: <http://niche.cs.dal.ca/EMA_JIA.owl#ActiveJointCount=0> (Active joint count is 0)
+
+AnnotationAssertion(rdfs:label <http://niche.cs.dal.ca/EMA_JIA.owl#ActiveJointCount=0> "Active joint count is 0")
+ClassAssertion(jia:SymptomsAndSigns <http://niche.cs.dal.ca/EMA_JIA.owl#ActiveJointCount=0>)
+
+
+)
